@@ -1,59 +1,84 @@
 # MLIP Benchmark
 
-Data and code for **Evaluating Universal Interatomic Potentials for Metallic
-Systems: From Elastic Response to Defect Energetics and Ideal Strength**.
-
-Jiawen Yu, Chaohong Guan, Xiaoqing Liu, Yangshuai Wang, Hong Zhu and Xiaoqin Zeng.
+Data, model predictions and analysis code supporting **Evaluating Universal
+Interatomic Potentials for Metallic Systems: From Elastic Response to Defect
+Energetics and Ideal Strength**.
 
 ## Contents
 
-- `data/`: extracted references, structures, predictions and supporting tables
-  (`figure_sources/`).
-- `plots/`: final main and supplementary figures (JPG).
-- `code/`: input export, metric calculation and plotting scripts.
-- `notebooks/`: six model calculation workflows and shared code.
-- `envs-setting/`: Conda environments; `metadata/`: versions, hashes and provenance.
+| Directory | Content |
+|---|---|
+| plots/ | Author-composed final Figures 1–7 (JPG) and supplementary Figures S1/S2 |
+| data/ | Extracted DFT references, input structures and six-model predictions |
+| analysis/ | Numerical tables and final 48-element coverage source rows |
+| code/ | Analysis and analytical-panel reproduction scripts |
+| notebooks/ | Six model notebooks, extraction and shared calculation code |
+| envs-setting/ | Six original Conda exports |
+| metadata/ | Model identities, hashes, runtime and source provenance |
+| model/ | Six selected local checkpoints; excluded from Git and upload ZIP |
 
-The local `model/` directory is Git-ignored and excluded from the upload ZIP.
+## Dataset scope
 
-## Scope
+Bulk relaxation/elasticity: 3,098 references; vacancy: 100 pairs; surface: 504 slabs;
+efficiency: 100 mixed inputs; tensile: Al, Cu, Mo, W (NequIP uses nequip1).
+The active SFE data exclude I1 and Po. All six models have 109 matched pairs;
+the main 108-pair analysis.
+Figure 2 uses 48 metallic species, counted from 3,814 explicit task cases.
 
-Bulk: 3,098 structures; vacancy: 100 pairs; surface: 504 slabs; efficiency:
-100 inputs; tensile: Al, Cu, Mo and W (NequIP uses nequip1).
-SFE excludes I1 and Po: 109 matched model pairs are retained, with 108 used in
-the main analysis after excluding MgCa I2. See `data/sfe_nonI1/` for flags and
-exclusions. Figure 2b covers 48 metallic species.
+Final composed JPGs in plots/ are the author's artwork. Scripts regenerate
+analytical panels into ignored results/ and do not overwrite these final images.
+They do not claim to reproduce every manually assembled layout pixel for pixel.
+See REPRODUCE.md and analysis/README.md for precise scopes and commands.
 
-## Run
+## Quick start
 
-```bash
-pip install -r requirements-analysis.txt
-python data/verify_data.py
-python code/export_inputs.py --output inputs
-python code/reproduce_paper.py --task all --output results/paper_reproduction
-python code/plot_fig2b_coverage.py
-python code/plot_fig5c_nonI1.py
-python code/plot_tensile_combined.py
-python code/update_SI_radar.py
-python code/reproduce_static_metrics.py
-```
+    pip install -r requirements-analysis.txt
+    python data/verify_data.py
+    python code/reproduce_paper.py --task all --output results/paper_reproduction
+    python code/plot_fig5c_nonI1.py
+    python code/plot_fig2b_coverage.py
+    python code/update_SI_radar.py
 
-Input export creates real task CSVs and deduplicated structures from the PKLs.
-Use these CSVs with the notebooks and model-specific environments for new
-inference. Output goes to `results/`, leaving final `plots/` unchanged.
-DFT settings are described in the manuscript/SI.
+Use separate model environments for inference. Notebook example manifests are
+schemas, not complete paper datasets. DFT settings are described in the final
+manuscript/SI; licensed VASP binaries and POTCAR are not distributed.
 
-Some original Fig. 3/SI static metrics remain unresolved; see
-`data/figure_sources/static/README.md`. Fig. 7b recalculates SFE only; other
-axes retain original authored scores. Bulk-model relaxed coordinates were not
-saved. These scripts do not claim exact reproduction of every historical
-trajectory or manually composed figure.
+## Models and environment
+
+NequIP-OAM-XL, MACE-MPA-0 medium, SevenNet-Omni-i12, DPA-3.1-3M-FT,
+CHGNet 0.3.0 and MatterSim 1.0.0-5M are identified in metadata/models.csv.
+Six selected local checkpoints have recorded hashes. model/ is Git-ignored:
+weight redistribution and download sources must be checked separately.
+SevenNet and NequIP exceed normal Git file-size limits; do not force-add them.
+
+Reported hardware: one RTX 4090 (24 GB), 10 vCPU, 60 GB RAM, Ubuntu 24.04.
+Actual model Conda exports contain PyTorch 2.9.1 or 2.5.1+cu121; the reported
+2.7.0 was the base-image description. The server NVIDIA driver is not recorded.
+
+## Interpretation and limitations
+
+Bulk-model final atomic coordinates were not saved. Hash checks do not certify
+fresh checkpoint loading. The original global Figure 3 aggregate and all SI
+static energy/force results are not fully reproduced by available-data scripts.
+Figure 7b recalculates SFE only; seven other axes retain original authored
+scores. Known reference flags/exclusions remain documented in data/sfe_nonI1/.
 
 ## Citation and permissions
 
-Please cite the associated article and the exact repository commit/release:
-https://github.com/jiaweny097-web/MLIP-Benchmark
+Repository: https://github.com/jiaweny097-web/MLIP-Benchmark
 
-Original code is available for noncommercial research/education; original
-data/documentation use CC BY-NC 4.0. Third-party terms remain applicable.
-See `LICENSE` for complete terms and source attributions.
+Use CITATION.cff and cite the actual tag/commit used. No finalized release tag
+or archival DOI is asserted by this local preparation. Original software is
+licensed for noncommercial research/education (LICENSE-CODE.txt); original data
+and documentation use CC BY-NC 4.0 (LICENSE-DATA.md). Third-party rights remain
+with their owners; see THIRD_PARTY_NOTICES.md. This is source-available under
+noncommercial terms. Public access and final manuscript correspondence should
+be confirmed when publishing the reviewed files.
+
+## Reproduction updates
+
+Run python code/export_inputs.py --output inputs to generate the actual retained
+input manifests and structures. See REPRODUCE.md for tested counts and commands.
+Static Fig3/SI S3 differences and missing fields are documented in analysis/static/.
+All eight radar axes have source/status records in analysis/fig7b/scoring_provenance.csv.
+Weight download links are optional convenience metadata, not a new prerequisite.
