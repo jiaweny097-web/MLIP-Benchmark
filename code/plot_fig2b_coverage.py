@@ -26,7 +26,7 @@ nonmetals=set('H He B C N O F Ne Si P S Cl Ar Ge As Se Br Kr Sb Te I Xe Po At Rn
 metals=set(coords)-nonmetals
 
 def main():
-    out=ROOT/'analysis/fig2b'
+    out=ROOT/'data/figure_sources/fig2b'
     source=pd.read_csv(out/'coverage_source_rows.csv',dtype=str)
     source=source[source.scope=='release_reference_scope']
     out=ROOT/'results/fig2b';out.mkdir(parents=True,exist_ok=True)

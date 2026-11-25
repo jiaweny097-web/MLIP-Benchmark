@@ -15,3 +15,7 @@ Energy is eV, length angstrom, force eV/angstrom. Surface/SFE units are explicit
 Source paths are provenance, not runnable paths on another computer. Missing
 values are not zero. Only deserialize trusted pickle files. data_status.csv
 records availability limitations.
+
+figure_sources/ retains figure input tables, element counts, radar scoring provenance,
+SFE/SI metrics and tensile results. It contains evidence used by code, not duplicate
+rendered figures. Final JPG artwork is in plots/.

@@ -62,7 +62,7 @@ def main():
         plt.close(fig)
     table=pd.DataFrame(metrics)
     table.to_csv(out/'Fig5c_metrics.csv',index=False)
-    reference=pd.read_csv(ROOT/'analysis/sfe_nonI1/Fig5c_metrics.csv')
+    reference=pd.read_csv(ROOT/'data/figure_sources/sfe_nonI1/Fig5c_metrics.csv')
     np.testing.assert_allclose(table[['MAE_mJ_m2','RMSE_mJ_m2','R2','MAPE_percent']],reference[['MAE_mJ_m2','RMSE_mJ_m2','R2','MAPE_percent']])
     print('PASS: Figure 5c composite style; metrics identical to paired-data evaluation.')
 

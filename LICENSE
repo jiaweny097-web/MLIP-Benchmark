@@ -1,14 +1,89 @@
 License scope
 
-Original data and original documentation: Creative Commons
-Attribution-NonCommercial4.0 International (CC BY-NC4.0).
-See LICENSE-DATA.md and https://creativecommons.org/licenses/by-nc/4.0/legalcode .
+Original software: the Noncommercial Research Software License below.
+Original data/documentation: CC BY-NC 4.0, as stated below.
+Third-party material retains its own rights and terms. These grants cover only
+rights held by the contributors and do not relicense third-party contents.
 
-Original software and notebook code: the custom noncommercial research license
-in LICENSE-CODE.txt. This is source-available software, not an OSI-approved
-open-source license.
 
-Both grants apply only to rights held by the contributors. Third-party source
-datasets, copied software components and pretrained model weights are excluded
-and remain subject to their original licenses. No permission is granted to
-relicense third-party material or to override statutory rights.
+Noncommercial Research Software License
+Version1.0
+
+Copyright2026 the respective contributors.
+
+Subject to the conditions below, permission is granted without charge to any
+person obtaining a copy of the ORIGINAL software authored by the contributors
+in this repository to use, execute, copy, study, modify and redistribute that
+software and derivative source code solely for noncommercial research, education
+and independent verification of scientific results.
+
+1. Retain this license, existing copyright notices and attribution. Identify
+   modifications. Do not imply endorsement by the original authors.
+2. Commercial use is not granted. For this license, commercial use means use
+   primarily intended for or directed toward commercial advantage or monetary
+   compensation, including commercial products, paid services and contract work
+   performed primarily for commercial advantage. Obtain separate written
+   permission from the relevant rights holders for such use.
+3. Redistributed original software remains subject to these conditions. Include
+   this license with copies and modified versions; you may not grant permission
+   to commercially use the original software.
+4. Third-party software, libraries, datasets, checkpoints and material under
+   other licenses are outside this grant. Their own licenses govern.
+5. This license does not restrict rights available independently under law.
+   No trademark rights or express patent license are granted.
+6. Permission terminates for noncompliance. Stop unauthorized use and distribution.
+
+THE SOFTWARE IS PROVIDED AS IS, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE AUTHORS ARE NOT LIABLE FOR CLAIMS,
+DAMAGES OR OTHER LIABILITY ARISING FROM USE OR DISTRIBUTION.
+
+This custom research-use license is not MIT, Apache or an OSI-approved open-source
+license. Use the repository contact for questions or commercial permission.
+
+
+# Original data and documentation
+
+Copyright2026 the respective contributors.
+
+To the extent the contributors hold the relevant copyright or database rights,
+their original data and documentation in this repository are licensed under
+Creative Commons Attribution-NonCommercial4.0 International (CC BY-NC4.0):
+https://creativecommons.org/licenses/by-nc/4.0/legalcode
+
+You may share and adapt the licensed original material for noncommercial purposes,
+with appropriate attribution, a license link and an indication of modifications.
+The linked legal code governs; this summary does not modify its terms. Commercial
+use requires separate permission. No warranties are given.
+
+Third-party Materials Project, surface-dataset, alloy-dataset, literature-curve and
+model contents are excluded from this grant; their own terms and attribution
+requirements apply. A file being packaged here does not establish ownership of
+the underlying third-party content. See the third-party provenance section below.
+
+
+# Third-party provenance
+
+The repository-level noncommercial grants cover original contributions only.
+They do not replace the permissions attached to these sources:
+
+- Materials Project: Jain et al., https://doi.org/10.1063/1.4812323.
+  Material IDs and original dataset fields are retained. Verify the terms applying
+  to the actual downloaded records and acquisition/API version.
+- Surface/work-function dataset: Schindler et al.,
+  https://doi.org/10.1002/adfm.202401764. Preserve the original record identifiers.
+  Confirm the actual archive/download URL, dataset version and license.
+- High-entropy alloy source: Li et al., https://doi.org/10.1039/D4TA00982G.
+  Confirm the source archive license and retained derived-subset permissions.
+- Tensile reference curves: literature references33–36 in the manuscript.
+  The supplied curves are reference data, not newly calculated DFT in this repository.
+  Add exact per-element acquisition/digitization notes and source citations.
+- Pretrained checkpoints: the six projects in metadata/models.csv. Software
+  licenses may differ from checkpoint/data licenses; check the specific artifact
+  before redistribution. The local model directory is ignored until review.
+- VASP POTCAR/binaries are not distributed. For DFT reruns, provide potential
+  identifiers and settings without redistributing licensed pseudopotentials.
+
+Unconfirmed permissions above are release-preparation items, not a declaration
+that they have already been cleared.
+

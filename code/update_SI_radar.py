@@ -41,7 +41,7 @@ def main():
     pd.DataFrame(residuals).to_csv(out/'energy_error_cancellation.csv',index=False);d.to_csv(out/'SI_energy_pairs.csv',index=False)
     (out/'README.md').write_text('108 pairs, excluding I1/Po/MgCa I2. Original SI numbering: Figure S1 perfect, S2 fault, Table S4 total energy. Table S3 is separate static energy/force data and is unchanged. Unaligned raw energies may include composition-dependent reference offsets. Residual energy-difference errors control SFE; component errors largely cancel. Original SI documents preserved. Run python code/update_SI_radar.py.\n',encoding='utf-8')
     out=R/'results/fig7b';out.mkdir(parents=True,exist_ok=True)
-    t=pd.read_csv(R/'analysis/sfe_nonI1/Fig5c_metrics.csv');t=t[t.scope=='without_MgCa_I2'].set_index('model').loc[M].copy()
+    t=pd.read_csv(R/'data/figure_sources/sfe_nonI1/Fig5c_metrics.csv');t=t[t.scope=='without_MgCa_I2'].set_index('model').loc[M].copy()
     cols=['MAE_mJ_m2','RMSE_mJ_m2','MAPE_percent','R2']
     for col in cols:t[col+'_rank']=t[col].rank(ascending=col!='R2')
     t['mean_rank']=t[[col+'_rank' for col in cols]].mean(axis=1);t['SFE_score']=11-t.mean_rank.rank();t.to_csv(out/'SFE_metric_ranks_and_scores.csv')
