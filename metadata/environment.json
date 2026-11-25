@@ -1,0 +1,11 @@
+{
+  "source": "Author confirmation 2026-11-13",
+  "GPU": "NVIDIA RTX 4090",
+  "GPU_count": 1,
+  "GPU_memory_GB": 24,
+  "CPU_vCPU": 10,
+  "RAM_GB": 60,
+  "framework": "PyTorch 2.7.0",
+  "OS": "Ubuntu 24.04",
+  "note": "Notebook output evidence includes other versions for individual cells; retain it separately. Exact per-run exports and checkpoint hashes not supplied."
+}

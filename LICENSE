@@ -1,0 +1,14 @@
+License scope
+
+Original data and original documentation: Creative Commons
+Attribution-NonCommercial4.0 International (CC BY-NC4.0).
+See LICENSE-DATA.md and https://creativecommons.org/licenses/by-nc/4.0/legalcode .
+
+Original software and notebook code: the custom noncommercial research license
+in LICENSE-CODE.txt. This is source-available software, not an OSI-approved
+open-source license.
+
+Both grants apply only to rights held by the contributors. Third-party source
+datasets, copied software components and pretrained model weights are excluded
+and remain subject to their original licenses. No permission is granted to
+relicense third-party material or to override statutory rights.

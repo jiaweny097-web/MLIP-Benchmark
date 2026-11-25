@@ -1,0 +1,7 @@
+metric,previous_manuscript_value,current_nequip1_value
+MAE_GPa,0.963,0.976
+RMSE_GPa,1.072,1.083
+MAPE_percent,4.997,5.041
+Relative_E_error_percent,12.82,13.91
+NIASE_percent,6.71,6.60
+Relative_strain_energy_error_percent,6.44,6.32

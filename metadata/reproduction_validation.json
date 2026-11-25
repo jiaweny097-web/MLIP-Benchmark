@@ -1,0 +1,42 @@
+{
+  "data_verifier": "passed",
+  "available_analysis_tasks": [
+    "bulk",
+    "defects",
+    "tensile",
+    "efficiency",
+    "static"
+  ],
+  "environment_exports": 6,
+  "selected_checkpoint_hashes": "all six match inventory",
+  "original_inference_rerun": false,
+  "pending": [
+    "final HCP I1 and final SFE pairs",
+    "original global Fig3",
+    "original Fig2 full-corpus count",
+    "SFE total-energy SI analyses"
+  ],
+  "differences_from_manuscript": [
+    "Author-selected nequip1 yields tensile peak MAE about 0.976 GPa rather than the earlier manuscript 0.963 GPa.",
+    "Derived Cauchy valid counts/rates differ slightly from prior manuscript values and require final input/sample-rule reconciliation.",
+    "Historical bulk code filters individual MAPE above 50%; both filtered and all-finite analyses are output and labeled.",
+    "Environment exports contain PyTorch2.9.1 or2.5.1+cu121; the earlier2.7.0 description is a base-image report, not a replacement for actual exports."
+  ],
+  "tensile_axis": "verified: simulation z / sigma_zz in all six historical codes",
+  "repository_tensile_update": {
+    "inference_default_axis": 2,
+    "analytic_default_axis_check": "passed",
+    "nequip_table_rounded": [
+      "0.976",
+      "1.083",
+      "5.041",
+      "13.91",
+      "6.60",
+      "6.32"
+    ],
+    "figures_and_metrics": "analysis/tensile",
+    "original_curves_modified": false,
+    "model_inference_rerun": false,
+    "manuscripts_modified": false
+  }
+}

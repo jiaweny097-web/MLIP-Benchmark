@@ -1,0 +1,2 @@
+ID,fault_path,perfect_path,removed_species,chemical_potential_eV
+example,structures/vacancy/POSCAR,structures/perfect/POSCAR,Al,-3.5

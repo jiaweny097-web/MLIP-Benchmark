@@ -1,0 +1,2 @@
+ID,fault_path,perfect_path,fault_type,fault_planes
+example,structures/fault/POSCAR,structures/perfect/POSCAR,I1,1

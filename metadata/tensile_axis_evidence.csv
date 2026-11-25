@@ -1,0 +1,7 @@
+model,source_notebook,source_cell_zero_based,source_sha256,loading_axis,stress_component,imposed_cell_entry,transverse_cell_axes,historical_sign_rule
+mace,benchmark-data-并行/mace.ipynb,35,1725895e1fcc948cedb0ec5aea530f986e875ed544d3e02f009372bc25ff0452,simulation z,sigma_zz,"cell[2, 2]","x,y","if raw_stress[2]<0 at strain0.01, negate full stress vector"
+NequIp,benchmark-data-并行/NequIp.ipynb,35,4594afa0aa4745d5b8414160960f7740a3f0b8849bc134e347d00db94cc4bf9d,simulation z,sigma_zz,"cell[2, 2]","x,y","if raw_stress[2]<0 at strain0.01, negate full stress vector"
+mattersim,benchmark-data-并行/mattersim.ipynb,35,05861094e378b2d5290b6e06d73dfc0687104e126061f728348647923de49600,simulation z,sigma_zz,"cell[2, 2]","x,y","if raw_stress[2]<0 at strain0.01, negate full stress vector"
+dpa,benchmark-data-并行/dpa.ipynb,44,c62ca9f361f8584a85cff2281d2aedaab03036aec6ed9c05d091e2e22167cea7,simulation z,sigma_zz,"cell[2, 2]","x,y","if raw_stress[2]<0 at strain0.01, negate full stress vector"
+chgnet,benchmark-data-并行/chgnet.ipynb,38,3b78f98e38f7887a07667808defb8179e8bb8ab18383f470f95942d4bb208cf9,simulation z,sigma_zz,"cell[2, 2]","x,y","if raw_stress[2]<0 at strain0.01, negate full stress vector"
+sevennet,benchmark-data-并行/sevennet.ipynb,31,5e43d1ebf0976aff6a19b6d54052a99b2203167e4a96763d6f24d3b2add633e6,simulation z,sigma_zz,"cell[2, 2]","x,y","if raw_stress[2]<0 at strain0.01, negate full stress vector"

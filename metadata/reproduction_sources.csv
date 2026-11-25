@@ -1,0 +1,3 @@
+output,original_notebook,source_cell,adaptation,source_notebook_sha256
+code/reproduce/tensile_original_metrics.py,benchmark-data-并行\data-extract.ipynb,105,AST-extracted numerical functions; only PKL data access adapted; source zz axis preserved,4715b79e94fe0a5aaa5301a6776b1fd98ef88c10c023ef9340c38a99b40a4fd1
+metadata/material_structure_classes.csv,error analysis.ipynb,"4,7,22","Original classify-new2.csv structure_type mapping, no inferred replacement",848d1a74c76ff0d9ddd8fbc14f3f08d7fce6df13c7cba344a8b897bd2114366f

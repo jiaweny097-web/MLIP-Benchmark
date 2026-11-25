@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.env
+.venv/
+results/
+# Keep downloading and third-party checkpoint files out of Git until their size,
+# identity, redistribution terms and LFS/archive strategy have been reviewed.
+/model/
+*.part
+*.crdownload

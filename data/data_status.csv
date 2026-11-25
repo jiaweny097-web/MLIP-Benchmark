@@ -1,0 +1,8 @@
+task,status,needed
+sfe_hcp_i1,v4 DFT paired in sfe_v4; 15 I1 pairs supplied; ZnNi nonconverged,Matching six-model final I1 results; saved outputs fail final fixed-coordinate match; resolve flagged perfect energies
+sfe_fcc_i2,partial extracted structures/energies retained,Final same-type pair manifest and model result input-version confirmation; do not use legacy same-ID subtraction
+bulk_elastic,3098 inputs/results retained per model,Relaxed model atomic coordinates and complete predicted elastic tensor if publication needs those fields
+surface,504 cross-model references plus DFT slab/matched-bulk total energies independently verified,None for504 extracted DFT slab/matched-bulk energy pairs; absolute zeroes are not compared across methods
+tensile,NequIP1 selected; six original codes verified loading simulation z and analyzing sigma_zz,Per-strain structures absent; previous manuscript xx labels and NequIP values need a separate document revision
+efficiency,100 input IDs match all six speed result collections,None for extracted records; timing aggregation is inherited from supplied summary
+static_vacancy,Snapshot and relaxed formation-state collections kept separate,Verify whether archived DFT snapshot energies/forces correspond to the exact structure frames used by each prediction

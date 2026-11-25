@@ -1,0 +1,171 @@
+model,pair_key,reason
+nequip,fcc/Al/esf/AlCs,perfect: missing or ambiguous exact constrained input/result
+nequip,fcc/Al/esf/AlGa,perfect: missing or ambiguous exact constrained input/result
+nequip,fcc/Al/esf/AlGe,perfect: missing or ambiguous exact constrained input/result
+nequip,fcc/Al/esf/AlIn,perfect: missing or ambiguous exact constrained input/result
+nequip,fcc/Al/esf/AlK,perfect: missing or ambiguous exact constrained input/result
+nequip,fcc/Al/esf/AlLi,perfect: missing or ambiguous exact constrained input/result
+nequip,fcc/Al/esf/AlMg,perfect: missing or ambiguous exact constrained input/result
+nequip,fcc/Al/esf/AlNa,perfect: missing or ambiguous exact constrained input/result
+nequip,fcc/Al/esf/AlPb,perfect: missing or ambiguous exact constrained input/result
+nequip,fcc/Al/esf/AlPo,Po outside common model element coverage
+nequip,fcc/Al/esf/AlRb,perfect: missing or ambiguous exact constrained input/result
+nequip,fcc/Al/esf/AlSb,perfect: missing or ambiguous exact constrained input/result
+nequip,fcc/Al/esf/AlSn,perfect: missing or ambiguous exact constrained input/result
+nequip,fcc/Al/esf/AlSr,perfect: missing or ambiguous exact constrained input/result
+nequip,fcc/Al/esf/AlTl,perfect: missing or ambiguous exact constrained input/result
+nequip,fcc/Al/isf/AlCs,perfect: missing or ambiguous exact constrained input/result
+nequip,fcc/Al/isf/AlGa,perfect: missing or ambiguous exact constrained input/result
+nequip,fcc/Al/isf/AlGe,perfect: missing or ambiguous exact constrained input/result
+nequip,fcc/Al/isf/AlIn,perfect: missing or ambiguous exact constrained input/result
+nequip,fcc/Al/isf/AlK,perfect: missing or ambiguous exact constrained input/result
+nequip,fcc/Al/isf/AlLi,perfect: missing or ambiguous exact constrained input/result
+nequip,fcc/Al/isf/AlMg,perfect: missing or ambiguous exact constrained input/result
+nequip,fcc/Al/isf/AlNa,perfect: missing or ambiguous exact constrained input/result
+nequip,fcc/Al/isf/AlPb,perfect: missing or ambiguous exact constrained input/result
+nequip,fcc/Al/isf/AlPo,Po outside common model element coverage
+nequip,fcc/Al/isf/AlRb,perfect: missing or ambiguous exact constrained input/result
+nequip,fcc/Al/isf/AlSb,perfect: missing or ambiguous exact constrained input/result
+nequip,fcc/Al/isf/AlSn,perfect: missing or ambiguous exact constrained input/result
+nequip,fcc/Al/isf/AlSr,perfect: missing or ambiguous exact constrained input/result
+nequip,fcc/Al/isf/AlTl,perfect: missing or ambiguous exact constrained input/result
+nequip,fcc/Cu/esf/CuPo,Po outside common model element coverage
+nequip,fcc/Cu/isf/CuPo,Po outside common model element coverage
+nequip,hcp/Zn/I2/ZnTi,perfect: missing or ambiguous exact constrained input/result
+mace,fcc/Al/esf/AlCs,perfect: missing or ambiguous exact constrained input/result
+mace,fcc/Al/esf/AlGa,perfect: missing or ambiguous exact constrained input/result
+mace,fcc/Al/esf/AlGe,perfect: missing or ambiguous exact constrained input/result
+mace,fcc/Al/esf/AlIn,perfect: missing or ambiguous exact constrained input/result
+mace,fcc/Al/esf/AlK,perfect: missing or ambiguous exact constrained input/result
+mace,fcc/Al/esf/AlLi,perfect: missing or ambiguous exact constrained input/result
+mace,fcc/Al/esf/AlMg,perfect: missing or ambiguous exact constrained input/result
+mace,fcc/Al/esf/AlNa,perfect: missing or ambiguous exact constrained input/result
+mace,fcc/Al/esf/AlPb,perfect: missing or ambiguous exact constrained input/result
+mace,fcc/Al/esf/AlPo,Po outside common model element coverage
+mace,fcc/Al/esf/AlRb,perfect: missing or ambiguous exact constrained input/result
+mace,fcc/Al/esf/AlSb,perfect: missing or ambiguous exact constrained input/result
+mace,fcc/Al/esf/AlSn,perfect: missing or ambiguous exact constrained input/result
+mace,fcc/Al/esf/AlSr,perfect: missing or ambiguous exact constrained input/result
+mace,fcc/Al/esf/AlTl,perfect: missing or ambiguous exact constrained input/result
+mace,fcc/Al/isf/AlCs,perfect: missing or ambiguous exact constrained input/result
+mace,fcc/Al/isf/AlGa,perfect: missing or ambiguous exact constrained input/result
+mace,fcc/Al/isf/AlGe,perfect: missing or ambiguous exact constrained input/result
+mace,fcc/Al/isf/AlIn,perfect: missing or ambiguous exact constrained input/result
+mace,fcc/Al/isf/AlK,perfect: missing or ambiguous exact constrained input/result
+mace,fcc/Al/isf/AlLi,perfect: missing or ambiguous exact constrained input/result
+mace,fcc/Al/isf/AlMg,perfect: missing or ambiguous exact constrained input/result
+mace,fcc/Al/isf/AlNa,perfect: missing or ambiguous exact constrained input/result
+mace,fcc/Al/isf/AlPb,perfect: missing or ambiguous exact constrained input/result
+mace,fcc/Al/isf/AlPo,Po outside common model element coverage
+mace,fcc/Al/isf/AlRb,perfect: missing or ambiguous exact constrained input/result
+mace,fcc/Al/isf/AlSb,perfect: missing or ambiguous exact constrained input/result
+mace,fcc/Al/isf/AlSn,perfect: missing or ambiguous exact constrained input/result
+mace,fcc/Al/isf/AlSr,perfect: missing or ambiguous exact constrained input/result
+mace,fcc/Al/isf/AlTl,perfect: missing or ambiguous exact constrained input/result
+mace,fcc/Cu/esf/CuPo,Po outside common model element coverage
+mace,fcc/Cu/isf/CuPo,Po outside common model element coverage
+mace,hcp/Zn/I2/ZnTi,perfect: missing or ambiguous exact constrained input/result
+sevennet,fcc/Al/esf/AlCs,perfect: missing or ambiguous exact constrained input/result
+sevennet,fcc/Al/esf/AlGa,perfect: missing or ambiguous exact constrained input/result
+sevennet,fcc/Al/esf/AlGe,perfect: missing or ambiguous exact constrained input/result
+sevennet,fcc/Al/esf/AlIn,perfect: missing or ambiguous exact constrained input/result
+sevennet,fcc/Al/esf/AlK,perfect: missing or ambiguous exact constrained input/result
+sevennet,fcc/Al/esf/AlLi,perfect: missing or ambiguous exact constrained input/result
+sevennet,fcc/Al/esf/AlMg,perfect: missing or ambiguous exact constrained input/result
+sevennet,fcc/Al/esf/AlNa,perfect: missing or ambiguous exact constrained input/result
+sevennet,fcc/Al/esf/AlPb,perfect: missing or ambiguous exact constrained input/result
+sevennet,fcc/Al/esf/AlPo,Po outside common model element coverage
+sevennet,fcc/Al/esf/AlRb,perfect: missing or ambiguous exact constrained input/result
+sevennet,fcc/Al/esf/AlSb,perfect: missing or ambiguous exact constrained input/result
+sevennet,fcc/Al/esf/AlSn,perfect: missing or ambiguous exact constrained input/result
+sevennet,fcc/Al/esf/AlSr,perfect: missing or ambiguous exact constrained input/result
+sevennet,fcc/Al/esf/AlTl,perfect: missing or ambiguous exact constrained input/result
+sevennet,fcc/Al/isf/AlCs,perfect: missing or ambiguous exact constrained input/result
+sevennet,fcc/Al/isf/AlGa,perfect: missing or ambiguous exact constrained input/result
+sevennet,fcc/Al/isf/AlGe,perfect: missing or ambiguous exact constrained input/result
+sevennet,fcc/Al/isf/AlIn,perfect: missing or ambiguous exact constrained input/result
+sevennet,fcc/Al/isf/AlK,perfect: missing or ambiguous exact constrained input/result
+sevennet,fcc/Al/isf/AlLi,perfect: missing or ambiguous exact constrained input/result
+sevennet,fcc/Al/isf/AlMg,perfect: missing or ambiguous exact constrained input/result
+sevennet,fcc/Al/isf/AlNa,perfect: missing or ambiguous exact constrained input/result
+sevennet,fcc/Al/isf/AlPb,perfect: missing or ambiguous exact constrained input/result
+sevennet,fcc/Al/isf/AlPo,Po outside common model element coverage
+sevennet,fcc/Al/isf/AlRb,perfect: missing or ambiguous exact constrained input/result
+sevennet,fcc/Al/isf/AlSb,perfect: missing or ambiguous exact constrained input/result
+sevennet,fcc/Al/isf/AlSn,perfect: missing or ambiguous exact constrained input/result
+sevennet,fcc/Al/isf/AlSr,perfect: missing or ambiguous exact constrained input/result
+sevennet,fcc/Al/isf/AlTl,perfect: missing or ambiguous exact constrained input/result
+sevennet,fcc/Cu/esf/CuPo,Po outside common model element coverage
+sevennet,fcc/Cu/isf/CuPo,Po outside common model element coverage
+sevennet,hcp/Zn/I2/ZnTi,perfect: missing or ambiguous exact constrained input/result
+dpa,fcc/Al/esf/AlCs,perfect: missing or ambiguous exact constrained input/result
+dpa,fcc/Al/esf/AlGa,perfect: missing or ambiguous exact constrained input/result
+dpa,fcc/Al/esf/AlGe,perfect: missing or ambiguous exact constrained input/result
+dpa,fcc/Al/esf/AlIn,perfect: missing or ambiguous exact constrained input/result
+dpa,fcc/Al/esf/AlK,perfect: missing or ambiguous exact constrained input/result
+dpa,fcc/Al/esf/AlLi,perfect: missing or ambiguous exact constrained input/result
+dpa,fcc/Al/esf/AlMg,perfect: missing or ambiguous exact constrained input/result
+dpa,fcc/Al/esf/AlNa,perfect: missing or ambiguous exact constrained input/result
+dpa,fcc/Al/esf/AlPb,perfect: missing or ambiguous exact constrained input/result
+dpa,fcc/Al/esf/AlPo,Po outside common model element coverage
+dpa,fcc/Al/esf/AlRb,perfect: missing or ambiguous exact constrained input/result
+dpa,fcc/Al/esf/AlSb,perfect: missing or ambiguous exact constrained input/result
+dpa,fcc/Al/esf/AlSn,perfect: missing or ambiguous exact constrained input/result
+dpa,fcc/Al/esf/AlSr,perfect: missing or ambiguous exact constrained input/result
+dpa,fcc/Al/esf/AlTl,perfect: missing or ambiguous exact constrained input/result
+dpa,fcc/Al/isf/AlCs,perfect: missing or ambiguous exact constrained input/result
+dpa,fcc/Al/isf/AlGa,perfect: missing or ambiguous exact constrained input/result
+dpa,fcc/Al/isf/AlGe,perfect: missing or ambiguous exact constrained input/result
+dpa,fcc/Al/isf/AlIn,perfect: missing or ambiguous exact constrained input/result
+dpa,fcc/Al/isf/AlK,perfect: missing or ambiguous exact constrained input/result
+dpa,fcc/Al/isf/AlLi,perfect: missing or ambiguous exact constrained input/result
+dpa,fcc/Al/isf/AlMg,perfect: missing or ambiguous exact constrained input/result
+dpa,fcc/Al/isf/AlNa,perfect: missing or ambiguous exact constrained input/result
+dpa,fcc/Al/isf/AlPb,perfect: missing or ambiguous exact constrained input/result
+dpa,fcc/Al/isf/AlPo,Po outside common model element coverage
+dpa,fcc/Al/isf/AlRb,perfect: missing or ambiguous exact constrained input/result
+dpa,fcc/Al/isf/AlSb,perfect: missing or ambiguous exact constrained input/result
+dpa,fcc/Al/isf/AlSn,perfect: missing or ambiguous exact constrained input/result
+dpa,fcc/Al/isf/AlSr,perfect: missing or ambiguous exact constrained input/result
+dpa,fcc/Al/isf/AlTl,perfect: missing or ambiguous exact constrained input/result
+dpa,fcc/Cu/esf/CuPo,Po outside common model element coverage
+dpa,fcc/Cu/isf/CuPo,Po outside common model element coverage
+dpa,hcp/Zn/I2/ZnTi,perfect: missing or ambiguous exact constrained input/result
+chgnet,fcc/Al/esf/AlCs,perfect: missing or ambiguous exact constrained input/result
+chgnet,fcc/Al/esf/AlGa,perfect: missing or ambiguous exact constrained input/result
+chgnet,fcc/Al/esf/AlGe,perfect: missing or ambiguous exact constrained input/result
+chgnet,fcc/Al/esf/AlIn,perfect: missing or ambiguous exact constrained input/result
+chgnet,fcc/Al/esf/AlK,perfect: missing or ambiguous exact constrained input/result
+chgnet,fcc/Al/esf/AlLi,perfect: missing or ambiguous exact constrained input/result
+chgnet,fcc/Al/esf/AlMg,perfect: missing or ambiguous exact constrained input/result
+chgnet,fcc/Al/esf/AlNa,perfect: missing or ambiguous exact constrained input/result
+chgnet,fcc/Al/esf/AlPb,perfect: missing or ambiguous exact constrained input/result
+chgnet,fcc/Al/esf/AlPo,Po outside common model element coverage
+chgnet,fcc/Al/esf/AlRb,perfect: missing or ambiguous exact constrained input/result
+chgnet,fcc/Al/esf/AlSb,perfect: missing or ambiguous exact constrained input/result
+chgnet,fcc/Al/esf/AlSn,perfect: missing or ambiguous exact constrained input/result
+chgnet,fcc/Al/esf/AlSr,perfect: missing or ambiguous exact constrained input/result
+chgnet,fcc/Al/esf/AlTl,perfect: missing or ambiguous exact constrained input/result
+chgnet,fcc/Al/isf/AlCs,perfect: missing or ambiguous exact constrained input/result
+chgnet,fcc/Al/isf/AlGa,perfect: missing or ambiguous exact constrained input/result
+chgnet,fcc/Al/isf/AlGe,perfect: missing or ambiguous exact constrained input/result
+chgnet,fcc/Al/isf/AlIn,perfect: missing or ambiguous exact constrained input/result
+chgnet,fcc/Al/isf/AlK,perfect: missing or ambiguous exact constrained input/result
+chgnet,fcc/Al/isf/AlLi,perfect: missing or ambiguous exact constrained input/result
+chgnet,fcc/Al/isf/AlMg,perfect: missing or ambiguous exact constrained input/result
+chgnet,fcc/Al/isf/AlNa,perfect: missing or ambiguous exact constrained input/result
+chgnet,fcc/Al/isf/AlPb,perfect: missing or ambiguous exact constrained input/result
+chgnet,fcc/Al/isf/AlPo,Po outside common model element coverage
+chgnet,fcc/Al/isf/AlRb,perfect: missing or ambiguous exact constrained input/result
+chgnet,fcc/Al/isf/AlSb,perfect: missing or ambiguous exact constrained input/result
+chgnet,fcc/Al/isf/AlSn,perfect: missing or ambiguous exact constrained input/result
+chgnet,fcc/Al/isf/AlSr,perfect: missing or ambiguous exact constrained input/result
+chgnet,fcc/Al/isf/AlTl,perfect: missing or ambiguous exact constrained input/result
+chgnet,fcc/Cu/esf/CuPo,Po outside common model element coverage
+chgnet,fcc/Cu/isf/CuPo,Po outside common model element coverage
+chgnet,hcp/Zn/I2/ZnTi,perfect: missing or ambiguous exact constrained input/result
+mattersim,fcc/Al/esf/AlPo,Po outside common model element coverage
+mattersim,fcc/Al/isf/AlPo,Po outside common model element coverage
+mattersim,fcc/Cu/esf/CuPo,Po outside common model element coverage
+mattersim,fcc/Cu/isf/CuPo,Po outside common model element coverage
+mattersim,hcp/Zn/I2/ZnTi,fault: missing or ambiguous exact constrained input/result
