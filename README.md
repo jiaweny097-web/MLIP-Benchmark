@@ -4,8 +4,6 @@ Data, model predictions and analysis code supporting **Evaluating Universal
 Interatomic Potentials for Metallic Systems: From Elastic Response to Defect
 Energetics and Ideal Strength**.
 
-Authors: Jiawen Yu, Chaohong Guan, Xiaoqing Liu, Yangshuai Wang, Hong Zhu and Xiaoqin Zeng.
-
 ## Contents
 
 | Directory | Content |
@@ -24,8 +22,7 @@ Authors: Jiawen Yu, Chaohong Guan, Xiaoqing Liu, Yangshuai Wang, Hong Zhu and Xi
 Bulk relaxation/elasticity: 3,098 references; vacancy: 100 pairs; surface: 504 slabs;
 efficiency: 100 mixed inputs; tensile: Al, Cu, Mo, W (NequIP uses nequip1).
 The active SFE data exclude I1 and Po. All six models have 109 matched pairs;
-the main 108-pair analysis additionally excludes the flagged MgCa I2 reference.
-The extra pair and numerical sensitivity remain disclosed for verification.
+the main 108-pair analysis.
 Figure 2 uses 48 metallic species, counted from 3,814 explicit task cases.
 
 Final composed JPGs in plots/ are the author's artwork. Scripts regenerate
