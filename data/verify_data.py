@@ -34,6 +34,12 @@ for m in models:
  assert {r['ID'] for r in load('efficiency/predictions/'+m+'.pkl')}==speed
  assert {r['ID'] for r in load('surface/predictions/'+m+'.pkl')}==surface
  assert len(load('tensile/predictions/'+m+'.pkl'))==4
- for r in load('sfe_partial/predictions/'+m+'_fault.pkl'):assert 'I1' not in r['fault_type']
-assert all(r['fault_type']!='I1' for r in load('sfe_partial/dft/fcc_hcp_i2.pkl'))
+ sf=load('sfe_nonI1/'+m+'.pkl');assert len(sf)==109
+ assert {r['pair_key'] for r in sf}.issubset({r['pair_key'] for r in load('sfe_nonI1/reference.pkl')})
+ for r in sf:
+  assert r['fault_type']!='I1' and 'Po' not in r['formula']
+  assert math.isclose((r['ML_energy_fault_eV']-r['ML_energy_perfect_eV'])/r['area_A2']*16021.76634,r['ML_sfe_mJ_m2'],abs_tol=1e-7)
+for r in load('sfe_nonI1/reference.pkl'):
+ assert r['fault_type']!='I1' and 'Po' not in r['formula']
+ assert math.isclose((r['energy_fault_eV']-r['energy_perfect_eV'])/r['area_A2']*16021.76634,r['sfe_mJ_m2'],abs_tol=1e-7)
 print('PASS:',len(catalog),'standard-library-only PKLs; counts, IDs, vacancy energy formulas and I1 exclusion verified.')

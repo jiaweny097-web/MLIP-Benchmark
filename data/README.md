@@ -1,44 +1,17 @@
-# Consolidated extracted benchmark data
+# Extracted benchmark data
 
-Only aggregated PKL files and small documentation/indexes are included. No OUTCAR,
-vasprun.xml, POSCAR trees, electronic restart binaries, per-sample checkpoint folders
-or intermediate historical releases are included.
+Aggregated trusted PKLs contain schema_version, task, role, dataset_status,
+units, metadata, sources and records. Records use plain dict/list/scalar values,
+without live ASE/pymatgen calculators. No raw OUTCAR or restart trees are included.
+catalog.csv records counts, sizes and SHA-256. Run python data/verify_data.py.
 
-Layout: TASK/dft/reference.pkl, TASK/predictions/MODEL.pkl. Additional role files are
-explicitly named. Each file is a standard-library pickle envelope with schema_version,
-task, role, dataset_status, units, metadata, sources and records. Records contain plain
-dict/list/scalar objects only. ASE and pymatgen classes, calculators and model graphs
-are not embedded. Numpy arrays are converted to lists. POSCAR/CIF inputs are represented
-as normalized structural arrays or explicit source text where appropriate.
+Tasks: bulk_elastic (3,098 references), static calculation/static_bulk and
+static_vacancy, vacancy (100 pairs), surface (504 slabs and 286 bulk references),
+efficiency (100 mixed inputs), tensile (Al/Cu/Mo/W), sfe_nonI1 (109 matched
+pairs; 108 in the main-paper analysis). See task fields for units/structures.
+Bulk model relaxed atomic coordinates were not saved; none are fabricated.
 
-Read a trusted local file with pickle.load(open(path,"rb")) and inspect envelope["records"].
-Pickle must not be loaded from untrusted sources. catalog.csv gives counts/checksums;
-data_status.csv states scientific missing fields and unresolved provenance.
-
-Tasks:
-- bulk_elastic:3098 reference inputs and six3098-row prediction tables joined by material_id.
-- static_bulk:3098 single-point energy/force records per model; bulk energies are eV/atom.
-- vacancy:100 paired formation-energy records, input/relaxed structures and chemical potentials.
-- static_vacancy:archived snapshot DFT/model collections, separate from relaxed vacancy energies.
-- surface:504 slab references and six504-entry prediction sets; J/m2 and mJ/m2 labels explicit.
-- efficiency:100 mixed inputs and six100-entry speed result sets with step/time/convergence data.
-- tensile:four DFT literature curves, initial CIF structures and six model curve collections;
-  NequIP uses nequip1, selected by the author. Source stress-axis labels are preserved.
-- sfe_partial:historical FCC and HCP I2 source-extracted data only; I1 omitted from this collection.
-  No legacy derived SFE metrics are promoted; reference pairing still requires final path review.
-- sfe_v4:110 retained non-I1/non-Po DFT pairs and source tables. I1-only inputs and audits have been moved outside the upload database.
-- sfe_nonI1:109 common six-model pairs, plus an explicitly labelled108-pair sensitivity excluding MgCa I2.
-
-No missing structure is fabricated from its DFT reference. Bulk model relaxed coordinates
-and tensile per-strain atomic structures are absent in the supplied summaries, and are
-marked accordingly. The SFE perfect pools are unpaired shared records, not a completed
-I1 benchmark. Do not confuse raw numeric IDs with physical pair identities.
-
-This organization does not recalculate scientific values or resolve the documented
-data-quality questions. Full prior data and original simulations remain backed up
-outside the upload repository; historical exclusion records remain in metadata.
-
-Surface update:504 slab and matched-bulk total energies are included in surface/dft/reference.pkl, verified by (E_slab-E_bulk_matched)/(2A). Maximum reconstruction residual is below9e-8 J/m2. The matched bulk energy has been scaled to the slab atom count; absolute energy zeroes need not match uMLIP totals.
-
-Non-I1 evaluation: see sfe_nonI1/README.md for 109 common model pairs,
-plus explicitly labelled 108-pair sensitivity excluding MgCa I2.
+Energy is eV, length angstrom, force eV/angstrom. Surface/SFE units are explicit.
+Source paths are provenance, not runnable paths on another computer. Missing
+values are not zero. Only deserialize trusted pickle files. data_status.csv
+records availability limitations.

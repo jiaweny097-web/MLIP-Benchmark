@@ -1,89 +1,68 @@
-# Reproducing the Available Analyses
+# Reproduce numerical results and analytical panels
 
-This document describes the analyses that can be recomputed from the current
-consolidated data release. It does not claim that pending HCP I1 results or the
-original global Figure 3 aggregate can already be reproduced.
+Run commands from the repository root. Final author-composed Figures 1–7 are
+plots/Fig1.jpg through Fig7.jpg. Code writes regenerated JPG panels and tables
+to ignored results/; it does not overwrite manually assembled final artwork.
 
-## Environment setup
+    python data/verify_data.py
+    python code/reproduce_paper.py --task all --output results/paper_reproduction
 
-Six author-supplied Conda exports are stored in `envs-setting/`. Portable copies
-remove only the server-specific environment name and absolute prefix:
+Task choices: bulk, defects, tensile, efficiency, static. These calculate
+available bulk/elastic, vacancy/surface, tensile and timing metrics. Static
+analysis does not reconstruct the original global Figure 3 aggregate.
 
-```bash
-conda env create -f envs-setting/portable/mace-environment.yml
-conda activate mlip-mace
-```
+    python code/plot_fig2b_coverage.py
+    python code/plot_fig5c_nonI1.py
+    python code/plot_tensile_combined.py
+    python code/update_SI_radar.py
 
-Repeat with the selected model name. The exports record the actual package sets,
-but they do not record the NVIDIA driver or every external pip index used when the
-environments were created.
+Figure 2b uses the final 48-element/3,814-case source rows. Figure 5c uses 108
+pairs in the main scope; the 109-pair sensitivity is also numerically available.
+SI code computes Figure S1 perfect energies, S2 fault energies, Table S4 and
+the SFE-only radar update. Table S3 static energy/force values are separate and
+are not rederived by relaxed-energy analysis. See analysis/README.md.
 
-## Verify the released data
+Tensile uses sigma_zz and original numerical peak/integration functions with
+the author-selected nequip1 data. Analysis scripts do not rerun inference.
+For new calculations use the six notebooks, shared workflow and real input
+manifests. config/manifest_examples contains schemas, not ready paper inputs.
 
-```bash
-python data/verify_data.py
-```
+    conda env create --name mlip-mace --file envs-setting/mace-environment.yml
 
-This checks all catalogued PKL envelopes, record counts and hashes, six-model ID coverage,
-vacancy formation-energy equations, the 504 surface-energy reconstructions and the
-exclusion of I1 from active SFE records.
+Use an explicit new environment name rather than the original server prefix.
+Repeat with each model export. Supply selected checkpoints identified in
+metadata/models.csv; they remain outside Git/upload ZIP. DFT settings and
+pseudopotential identifiers should be read from the submitted manuscript/SI.
 
-## Recompute available paper analyses
+## Actual input export and task lists
 
-```bash
-python code/reproduce_paper.py --task all --output results/paper_reproduction
-```
+    python code/export_inputs.py --output inputs
 
-Individual task choices are `bulk`, `defects`, `tensile`, `efficiency` and
-`static`. The command creates CSV metric tables and PNG/SVG figures. Its exact
-scope is saved in `results/paper_reproduction/scope.json`.
+This tested builder reads retained PKLs and creates real CSV task manifests
+and deduplicated ASE JSON structure files. No model is loaded. Coordinates,
+cell, species order, PBC and supported constraints are checked after export.
+It creates bulk/elastic/static bulk3098 each, static vacancy100, vacancy100,
+SFE108, surface504, efficiency100 and tensile4 input rows;4427 distinct
+serialized structures in the tested export. static.csv defaults to bulk;
+use static_vacancy.csv for that task. Original input arrays are preserved;
+missing historical relaxed bulk coordinates are not reconstructed.
 
-| Paper content | Command/task | Principal outputs | Scope note |
-|---|---|---|---|
-| Bulk lattice and elastic indicators | `--task bulk` | `bulk_lattice_elastic_metrics.csv`, `Fig3c_Fig4_available_*.png`, `SI_invalid_elastic_pairs.csv` | Reports both all-finite results and the historical MAPE<=50% filter with sample counts |
-| Derived Pugh/Cauchy descriptors | `--task bulk` | `Table2_metallurgical_metrics.csv` | Uses the archived structure classification and explicit valid-pair counts |
-| Vacancy and surface panels | `--task defects` | `Fig5ab_vacancy_surface.png`, `Fig5ab_metrics.csv` | SFE has a separate non-I1 entry point: code/plot_fig5c_nonI1.py |
-| Ideal tensile curves and Table 3 metrics | `--task tensile` | `Fig6_Mo_sigmaZZ.png`, `Fig6_W_sigmaZZ.png`, `Fig6_Cu_sigmaZZ.png`, `Fig6_Al_sigmaZZ.png` (and SVG), `tensile_peak_values.csv`, `Table3_all_six_metrics.csv` | Four separate figures: Mo/W/Cu use their DFT maximum strains; Al uses the model-test maximum (50%). No legends or model extrapolation. NequIP uses `nequip1`; loading axis z/σzz |
-| Relaxation-efficiency/Pareto input | `--task efficiency` | `Fig7a_efficiency.png`, `Fig7_efficiency_pareto.csv` | Recomputes the source arithmetic mean of stored `time_per_step`, including the source zero-step convention |
-| Retained static subsets | `--task static` | `static_task_metrics_only.csv` | Bulk and vacancy subsets only; not the original global Figure 3 aggregate |
+The existing six notebooks reference inputs/<task>.csv; run the builder before
+enabling LOAD_MODEL and the chosen RUN flag. SFE is explicitly108 common pairs,
+without I1/Po/MgCa I2. Surface exports matching bulk files. These are actual
+retained input datasets for fresh calculations, not proof that cleaned future
+optimizer/stress conventions reproduce historical trajectories exactly.
 
-The extracted numerical functions for tensile metrics are in
-`code/reproduce/tensile_original_metrics.py`. Their original notebook/cell and
-source hashes are documented in `metadata/reproduction_sources.csv`.
+    python code/reproduce_static_metrics.py
 
-## Rerun model inference
+The original Fig3 unit conventions are implemented for available bulk/vacancy/
+surface subsets, with missing SFE/surface-force coverage documented separately.
+See analysis/static/README.md for unresolved old SI bulk values. Never substitute
+relaxed formation-energy data for a static energy/force test.
 
-The six model notebooks expose the same eight tasks and call the shared
-`notebooks/benchmark_workflows.py`. Checkpoints are selected by environment
-variable or the local `model/` path. Actual input manifests must be prepared from
-the schemas in `notebooks/config/manifest_examples/`; those example rows are not
-the manuscript dataset.
-
-Model files are ignored by Git because checkpoint redistribution and large-file
-handling require separate review. Their local SHA-256 values are recorded in
-`metadata/models.csv`. Use the exact upstream artifact plus the recorded hash, or
-an approved Git LFS/archive strategy.
-
-## DFT settings
-
-DFT settings, convergence criteria and reference definitions are described in the
-manuscript and Supporting Information. This repository distributes extracted
-structures and numerical results, not licensed VASP binaries/POTCAR or complete
-OUTCAR trees. For a final reproducible release, the manuscript/SI must remain the
-authoritative settings record and should identify the pseudopotential family and
-versions used.
-
-## Pending work
-
-- Align the final manuscript with the current non-I1 release scope; I1 reruns are required only if I1 claims are retained.
-- Non-I1 SFE pairs and Figure5c analysis are provided; resolve the flagged references and unmatched ZnTi I2 before claiming broader coverage.
-- The tensile loading axis is verified as z/σzz. Existing DOCX files retain their
-  previous wording; this repository update does not revise the manuscript.
-- Add a tested end-to-end entry point for every final manuscript figure and SI
-  table after those data are frozen.
-- Create an immutable Git tag/commit and, if used, an archival DOI.
-
-
-## Updated Figure5c and Figure2b
-
-`python code/plot_fig5c_nonI1.py` uses the matched non-I1 SFE data (109 and labelled108-pair scopes). `python code/plot_fig2b_coverage.py` uses explicit retained source rows, with separate original-source and current-reference populations. See analysis/fig2b/README.md. These are tested local plotting entry points; pending global Figure3 and full manuscript/SI reproduction are not implied.
+Figure7b provenance for all eight axes is in analysis/fig7b/scoring_provenance.csv.
+Only the SFE aggregation is recovered as an explicit new formula. The source
+notebook contains seven manually authored axes; no historical aggregate ranking
+formula can be inferred from those numbers. Other axes and final artwork have
+not been silently rescored. Weight download links are optional convenience
+metadata; model/version/selected filename/hash and original citations remain.

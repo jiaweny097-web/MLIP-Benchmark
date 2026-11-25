@@ -1,0 +1,9 @@
+axis,task,status,rule,source
+1,Static simulation and structural optimization,original authored score; no recoverable aggregation formula in source cell,manual source values retained,original plot.ipynb cell9
+2,Elastic properties,original authored score; no recoverable aggregation formula in source cell,manual source values retained,original plot.ipynb cell9
+3,Vacancy formation energy,original authored score; no recoverable aggregation formula in source cell,manual source values retained,original plot.ipynb cell9
+4,Stacking-fault energy,recomputed from108-pair metrics,mean metric ranks; score11-aggregate rank,analysis/fig7b/SFE_metric_ranks_and_scores.csv
+5,Surface energy,original authored score; no recoverable aggregation formula in source cell,manual source values retained,original plot.ipynb cell9
+6,Ideal tensile strength,original authored score; no recoverable aggregation formula in source cell,manual source values retained,original plot.ipynb cell9
+7,Convergence success rate,original authored score; no recoverable aggregation formula in source cell,manual source values retained,original plot.ipynb cell9
+8,Time per step,original authored score; no recoverable aggregation formula in source cell,manual source values retained,original plot.ipynb cell9

@@ -2,7 +2,6 @@
   {
     "model": "chgnet",
     "original": "envs-setting/chgnet-environment.yml",
-    "portable": "envs-setting/portable/chgnet-environment.yml",
     "python": "3.11.14",
     "torch": "2.9.1",
     "ase": "3.27.0",
@@ -11,13 +10,11 @@
     "scipy": "1.15.2",
     "pandas": "2.2.3",
     "pymatgen": "2025.10.7",
-    "export_sha256": "2a8af5478a55d1fc94754fc7fee25c690ba855c4534dfc023b55f2c811902580",
-    "portable_sha256": "267972465c8ed33c7d2a8c39998b7e161fd853d8bc8cc334c287fde6ce29c774"
+    "export_sha256": "2a8af5478a55d1fc94754fc7fee25c690ba855c4534dfc023b55f2c811902580"
   },
   {
     "model": "dpa",
     "original": "envs-setting/dpa-environment.yml",
-    "portable": "envs-setting/portable/dpa-environment.yml",
     "python": "3.11.14",
     "torch": "2.5.1+cu121",
     "ase": "3.27.0",
@@ -26,13 +23,11 @@
     "scipy": "1.16.3",
     "pandas": "2.3.3",
     "pymatgen": "2026.5.4",
-    "export_sha256": "c10ef379966209fb44f9559a38d43130c2cd26f268368d8e5bcf0df1633e21f5",
-    "portable_sha256": "33f9f2e4288f969b02651230401cc57196be071c38b60c432ff7027bc2b5f280"
+    "export_sha256": "c10ef379966209fb44f9559a38d43130c2cd26f268368d8e5bcf0df1633e21f5"
   },
   {
     "model": "mace",
     "original": "envs-setting/mace-environment.yml",
-    "portable": "envs-setting/portable/mace-environment.yml",
     "python": "3.11.14",
     "torch": "2.9.1",
     "ase": "3.27.0",
@@ -41,13 +36,11 @@
     "scipy": "1.16.3",
     "pandas": "2.3.3",
     "pymatgen": "2026.5.4",
-    "export_sha256": "6f330eb02e6ee998c788fd58d7c95dafabc2250a03ece1a3789e08b3d46ef57f",
-    "portable_sha256": "ac4e18c95cb571cafc6d315b96a5dc64776efcb32a4815604864ea1d0fb0898b"
+    "export_sha256": "6f330eb02e6ee998c788fd58d7c95dafabc2250a03ece1a3789e08b3d46ef57f"
   },
   {
     "model": "mattersim",
     "original": "envs-setting/mattersim-environment.yml",
-    "portable": "envs-setting/portable/mattersim-environment.yml",
     "python": "3.11.14",
     "torch": "2.9.1",
     "ase": "3.26.0",
@@ -56,13 +49,11 @@
     "scipy": "1.15.2",
     "pandas": "2.2.3",
     "pymatgen": "2025.10.7",
-    "export_sha256": "69d8dd044ffaecc690381a202d448ae9178761764bc29049bb45679013c495bf",
-    "portable_sha256": "94e6ee3a09bff1427c65a0d7807dc9497ddb87ce6a0e79581a18949281a8c8ea"
+    "export_sha256": "69d8dd044ffaecc690381a202d448ae9178761764bc29049bb45679013c495bf"
   },
   {
     "model": "nequip",
     "original": "envs-setting/nequip-environment.yml",
-    "portable": "envs-setting/portable/nequip-environment.yml",
     "python": "3.11.14",
     "torch": "2.9.1",
     "ase": "3.27.0",
@@ -71,13 +62,11 @@
     "scipy": "1.16.3",
     "pandas": "3.0.3",
     "pymatgen": "2026.5.4",
-    "export_sha256": "e8a2704876ac50ad40164c0f7476ab1b445d11350f2a6d5c7dd9da3dcdde0910",
-    "portable_sha256": "718d7b7b044483bb23ba07be1624eddf1d030a7aa488b6aba57a2d46efa497fa"
+    "export_sha256": "e8a2704876ac50ad40164c0f7476ab1b445d11350f2a6d5c7dd9da3dcdde0910"
   },
   {
     "model": "sevennet",
     "original": "envs-setting/sevennet-environment.yml",
-    "portable": "envs-setting/portable/sevennet-environment.yml",
     "python": "3.11.14",
     "torch": "2.5.1+cu121",
     "ase": "3.27.0",
@@ -86,7 +75,6 @@
     "scipy": "1.17.0",
     "pandas": "3.0.0",
     "pymatgen": "2025.10.7",
-    "export_sha256": "c2bb8165d3ddeeaddcca8f8d00ebbb93296df94628392974689a583005797d9a",
-    "portable_sha256": "1583a771cf4c31c08cff804b92288ebda8f389ecb8eae036b98f06fe4addc106"
+    "export_sha256": "c2bb8165d3ddeeaddcca8f8d00ebbb93296df94628392974689a583005797d9a"
   }
 ]

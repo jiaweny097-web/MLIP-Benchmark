@@ -1,0 +1,13 @@
+{
+  "original_source": "benchmark-data-\u5e76\u884c/plot.ipynb cell17 and user-supplied original Fig3 code",
+  "energy_unit": "eV/atom",
+  "force_unit": "eV/angstrom",
+  "full_original_Fig3_reproduced": false,
+  "original_SI_Table_S3_reproduced": false,
+  "surface_energy_metric": "normalized surface-energy error; not raw slab energy",
+  "missing": [
+    "matched SFE static snapshots/predictions for current retained subset",
+    "surface DFT force arrays if original force aggregate used them"
+  ],
+  "no_inference": true
+}

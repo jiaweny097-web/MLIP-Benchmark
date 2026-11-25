@@ -3,13 +3,5 @@ model/checkpoint_sevennet_omni_i12.pth,219904945,209.718,771543388f360d2762e09f6
 model/chgnet_0.3.0_e29f68s314m37.pth.tar,4863221,4.638,d14ab7c0f093efe64b60a7bcd540bca10e74fb7f46c86108a079af60524659d1,selected,True
 model/default_5M.pth,91176875,86.953,e3df9fa708725e3d453140646c7d1838324b347a3d1214cf1440522146f872b5,selected,True
 model/dpa-3.1-3m-ft.pth,18005091,17.171,5ffb78b8e0c675b2cd73b343d56a6a3b7eeb972db85fe80bc0846b0df5d16106,selected,True
-model/DPA-3.1-3M.pt,47176032,44.991,86dd3a804d78ca5d203ebf98747e8f16dff9713ba8950097ceb760b161e19907,alternate or duplicate; not selected,True
 model/mace-mpa-0-medium.model,79462305,75.781,75428afe3a1d7d8062e19bcaabd5c433623cabf308242ec9fb493e38604fb638,selected,True
-model/mattersim/default_5M.pth,91176875,86.953,e3df9fa708725e3d453140646c7d1838324b347a3d1214cf1440522146f872b5,alternate or duplicate; not selected,True
-model/mattersim/mattersim-v1.0.0-5M.pth,91176875,86.953,e3df9fa708725e3d453140646c7d1838324b347a3d1214cf1440522146f872b5,alternate or duplicate; not selected,True
 model/mir-group__NequIP-OAM-XL__0.1.nequip.pt2,139741924,133.268,88ca9e608139b1ed9d9b3c345f97572cf188a5e38681145c06614f0dd70105b9,selected,False
-model/NequIP/compile_model.pkl,526657,0.502,b1ccf1bb31fb21ad4a6b05cefce8b47a2dc3143f8398d0d46c4e7dc5ab1ea634,alternate or duplicate; not selected,True
-model/NequIP/config.yaml,21041,0.02,da13cfa1cb18c69cec7ae9e06fdb9a9d1959b97d8be80d406954c75088cff749,alternate or duplicate; not selected,True
-model/NequIP/eager_model.pkl,526561,0.502,4b6c3f69b7cdce76c02f68c737bb2de43b073aae8f5cfc13aae03ca4e91c7229,alternate or duplicate; not selected,True
-model/NequIP/example_data.pkl,887,0.001,9cbb2c5722ddbcfcd4829971194b8be9863bf3a87624af4053f69ced6099ab76,alternate or duplicate; not selected,True
-model/NequIP/package_metadata.txt,1143,0.001,9803a5379b833ac64cd2de524a696ffde0b304dfecfc7bc95b968f687130e9bf,alternate or duplicate; not selected,True

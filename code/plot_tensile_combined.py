@@ -67,9 +67,9 @@ def main():
                bbox_to_anchor=(0.52, 0.005))
     fig.subplots_adjust(left=0.085, right=0.985, top=0.985,
                         bottom=0.19, wspace=0.18, hspace=0.24)
-    out = ROOT / 'analysis' / 'tensile'
+    out = ROOT / 'results' / 'tensile'
     out.mkdir(parents=True, exist_ok=True)
-    for extension in ['png', 'svg', 'pdf']:
+    for extension in ['jpg']:
         path = out / ('Fig6_combined_sigmaZZ.' + extension)
         fig.savefig(path, dpi=400, facecolor='white')
         print(path)

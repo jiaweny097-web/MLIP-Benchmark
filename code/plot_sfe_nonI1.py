@@ -14,7 +14,7 @@ COLORS=['#F3891C','#F8AD63','#FDE1C7','#4874CB','#A1BEE4','#C4CCE8']
 
 def main():
     data=ROOT/'data/sfe_nonI1'
-    out=ROOT/'analysis/sfe_nonI1'
+    out=ROOT/'results/sfe_nonI1'
     out.mkdir(parents=True,exist_ok=True)
     frame=pd.read_csv(data/'paired_model_results.csv')
     common=frame[frame.six_model_common].copy()
@@ -50,7 +50,7 @@ def main():
         if scope=='without_MgCa_I2':title+='; MgCa I2 excluded'
         fig.suptitle(title,fontsize=14)
         fig.tight_layout(rect=(0,0,1,.96))
-        for extension in ['png','svg','pdf']:
+        for extension in ['jpg']:
             fig.savefig(out/f'SFE_nonI1_{scope}.{extension}',dpi=350)
         plt.close(fig)
     pd.DataFrame(metrics).to_csv(out/'model_metrics.csv',index=False)

@@ -1,0 +1,19 @@
+task,model,N_energy,Energy_RMSE_eV_atom,N_force_components,Force_RMSE_eV_A,energy_basis
+bulk,nequip,3091,0.013631804100618284,0,,archived energy already eV/atom
+vacancy,nequip,100,0.1507787343008412,7800,0.13492815033100197,total energy divided by atom count
+surface,nequip,504,0.010164364269373047,0,,surface-energy difference times area times0.06241509 / slab atom count; original Fig3 convention
+bulk,mace,3091,0.01575736419597602,0,,archived energy already eV/atom
+vacancy,mace,100,0.16075275081376914,7800,0.14999467504734243,total energy divided by atom count
+surface,mace,504,0.012591565472596053,0,,surface-energy difference times area times0.06241509 / slab atom count; original Fig3 convention
+bulk,sevennet,3091,0.026726310148274136,0,,archived energy already eV/atom
+vacancy,sevennet,100,0.1812952155486459,7800,0.21440536763529397,total energy divided by atom count
+surface,sevennet,504,0.026822894587365143,0,,surface-energy difference times area times0.06241509 / slab atom count; original Fig3 convention
+bulk,dpa,3091,0.01418055442706661,0,,archived energy already eV/atom
+vacancy,dpa,100,0.16047923988131077,7800,0.15277808322552835,total energy divided by atom count
+surface,dpa,504,0.0093800021985062,0,,surface-energy difference times area times0.06241509 / slab atom count; original Fig3 convention
+bulk,chgnet,3091,0.04692744075008852,0,,archived energy already eV/atom
+vacancy,chgnet,100,0.18819695207695303,7800,0.1662186303253676,total energy divided by atom count
+surface,chgnet,504,0.04726568079063942,0,,surface-energy difference times area times0.06241509 / slab atom count; original Fig3 convention
+bulk,mattersim,3091,0.02617288963234028,0,,archived energy already eV/atom
+vacancy,mattersim,100,0.17409179271160835,7800,0.13237785817555983,total energy divided by atom count
+surface,mattersim,504,0.027623834036768602,0,,surface-energy difference times area times0.06241509 / slab atom count; original Fig3 convention

@@ -16,8 +16,8 @@ def metric(y,p):
     y=np.asarray(y,float);p=np.asarray(p,float);e=p-y;v=sum((y-y.mean())**2);nz=abs(y)>1e-12
     return dict(N=len(y),MAE=float(np.mean(abs(e))),RMSE=float(np.sqrt(np.mean(e*e))),R2=float(1-sum(e*e)/v) if v else np.nan,MAPE_percent=float(np.mean(abs(e[nz]/y[nz]))*100) if nz.any() else np.nan)
 def savefig(fig,out,name):
-    fig.savefig(out/(name+'.png'),dpi=250,bbox_inches='tight')
-    fig.savefig(out/(name+'.svg'),bbox_inches='tight');plt.close(fig)
+    fig.savefig(out/(name+'.jpg'),dpi=250,bbox_inches='tight')
+    plt.close(fig)
 def paired():
     ref=pd.DataFrame(load('bulk_elastic/dft/reference.pkl')).set_index('ID',verify_integrity=True)
     classes=pd.read_csv(ROOT/'metadata/material_structure_classes.csv').set_index('material_id')

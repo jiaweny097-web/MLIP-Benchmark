@@ -1,0 +1,11 @@
+task,count,generated_manifest,builder
+bulk,3098,inputs/bulk.csv,python code/export_inputs.py --output inputs
+elastic,3098,inputs/elastic.csv,python code/export_inputs.py --output inputs
+static_bulk,3098,inputs/static_bulk.csv,python code/export_inputs.py --output inputs
+static,3098,inputs/static.csv,python code/export_inputs.py --output inputs
+static_vacancy,100,inputs/static_vacancy.csv,python code/export_inputs.py --output inputs
+vacancy,100,inputs/vacancy.csv,python code/export_inputs.py --output inputs
+sfe,108,inputs/sfe.csv,python code/export_inputs.py --output inputs
+surface,504,inputs/surface.csv,python code/export_inputs.py --output inputs
+efficiency,100,inputs/efficiency.csv,python code/export_inputs.py --output inputs
+tensile,4,inputs/tensile.csv,python code/export_inputs.py --output inputs

@@ -1,8 +1,8 @@
-task,status,needed
-sfe_hcp_i1,excluded from active database by author request,Align final manuscript scope; matching I1 results needed only if I1 claims retained
-sfe_fcc_i2,109 common non-I1 model pairs;110 retained DFT pairs;108-pair sensitivity also provided,Resolve ZnTi I2 match and flagged references; see sfe_nonI1 README
-bulk_elastic,3098 inputs/results retained per model,Relaxed model atomic coordinates and complete predicted elastic tensor if publication needs those fields
-surface,504 cross-model references plus DFT slab/matched-bulk total energies independently verified,None for504 extracted DFT slab/matched-bulk energy pairs; absolute zeroes are not compared across methods
-tensile,NequIP1 selected; six original codes verified loading simulation z and analyzing sigma_zz,Per-strain structures absent; previous manuscript xx labels and NequIP values need a separate document revision
-efficiency,100 input IDs match all six speed result collections,None for extracted records; timing aggregation is inherited from supplied summary
-static_vacancy,Snapshot and relaxed formation-state collections kept separate,Verify whether archived DFT snapshot energies/forces correspond to the exact structure frames used by each prediction
+task,status,needed
+sfe_hcp_i1,excluded from active release,Align final manuscript with the non-I1 scope
+sfe_fcc_i2,109 matched pairs;108 in main-paper analysis,Retained reference flags and ZnTi I2 missing match documented in sfe_nonI1
+bulk_elastic,3098 inputs/results retained per model,Relaxed model atomic coordinates and complete predicted elastic tensor if publication needs those fields
+surface,504 cross-model references plus DFT slab/matched-bulk total energies independently verified,None for504 extracted DFT slab/matched-bulk energy pairs; absolute zeroes are not compared across methods
+tensile,NequIP1 selected; six original codes verified loading simulation z and analyzing sigma_zz,Per-strain structures absent; previous manuscript xx labels and NequIP values need a separate document revision
+efficiency,100 input IDs match all six speed result collections,None for extracted records; timing aggregation is inherited from supplied summary
+static_vacancy,Snapshot and relaxed formation-state collections kept separate,Verify whether archived DFT snapshot energies/forces correspond to the exact structure frames used by each prediction

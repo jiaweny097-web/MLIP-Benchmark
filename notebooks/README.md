@@ -48,8 +48,6 @@ the installed runtime. Checkpoints are not bundled.
 ## Supporting files
 
 data-extract.ipynb: explicit pair validation and DFT zero-smearing energy extraction.
-error analysis.ipynb: paired metric evaluation with strict ID joins.
-plot.ipynb: selected table plotting and verified Figure3 script entry point.
 
 Historical adsorption/Mg-H2O work, BCC GSFE trials, manuscript generation, duplicate
 API-acquisition experiments and old plotting/structure utilities were removed from

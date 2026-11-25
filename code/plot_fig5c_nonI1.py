@@ -14,7 +14,7 @@ COLORS=['#F3891C','#F8AD63','#FDE1C7','#4874CB','#A1BEE4','#E0E7FF']
 def main():
     data=pd.read_csv(ROOT/'data/sfe_nonI1/paired_model_results.csv')
     data=data[data.six_model_common]
-    out=ROOT/'analysis/sfe_nonI1'
+    out=ROOT/'results/sfe_nonI1'
     out.mkdir(parents=True,exist_ok=True)
     plt.rcParams.update({'font.family':'Arial','svg.fonttype':'none','pdf.fonttype':42})
     metrics=[]
@@ -37,7 +37,7 @@ def main():
             ax.scatter(i+rng.uniform(-.32,.32,len(d)),e,s=45,color=c,alpha=.4,edgecolors='none',zorder=3)
             mae=np.mean(abs(e));den=np.sum((y-y.mean())**2);r2=1-np.sum(e**2)/den
             nonzero=abs(y)>1e-12;mape=100*np.mean(abs(e[nonzero]/y[nonzero]))
-            ax.text(i,.94,f'MAE = {mae:.1f}',transform=ax.get_xaxis_transform(),ha='center',va='top',fontsize=15)
+            ax.text(i,.94,f'MAE = {mae:.1f}',transform=ax.get_xaxis_transform(),ha='center',va='top',fontsize=17)
             top=fig.add_axes([left+width*i/6+.004,bottom+height+.03,width/6-.012,.18])
             top.set_xscale('symlog',linthresh=200);top.set_yscale('symlog',linthresh=200)
             top.set(xlim=(-inset_bound,inset_bound),ylim=(-inset_bound,inset_bound),xticks=[],yticks=[])
@@ -57,12 +57,12 @@ def main():
         ax.grid(axis='y',color='#E5E7EB',alpha=.5)
         for spine in ax.spines.values():spine.set_linewidth(1.5)
         fig.text(.483,.91,'I1 excluded' + ('; MgCa I2 excluded' if scope=='without_MgCa_I2' else '; all matched pairs'),ha='center',fontsize=13)
-        for extension in ['png','svg','pdf']:
+        for extension in ['jpg']:
             fig.savefig(out/f'Fig5c_SFE_nonI1_{scope}.{extension}',dpi=350,bbox_inches='tight',transparent=True)
         plt.close(fig)
     table=pd.DataFrame(metrics)
     table.to_csv(out/'Fig5c_metrics.csv',index=False)
-    reference=pd.read_csv(out/'model_metrics.csv')
+    reference=pd.read_csv(ROOT/'analysis/sfe_nonI1/Fig5c_metrics.csv')
     np.testing.assert_allclose(table[['MAE_mJ_m2','RMSE_mJ_m2','R2','MAPE_percent']],reference[['MAE_mJ_m2','RMSE_mJ_m2','R2','MAPE_percent']])
     print('PASS: Figure 5c composite style; metrics identical to paired-data evaluation.')
 

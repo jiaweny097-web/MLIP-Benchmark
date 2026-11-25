@@ -28,6 +28,8 @@ metals=set(coords)-nonmetals
 def main():
     out=ROOT/'analysis/fig2b'
     source=pd.read_csv(out/'coverage_source_rows.csv',dtype=str)
+    source=source[source.scope=='release_reference_scope']
+    out=ROOT/'results/fig2b';out.mkdir(parents=True,exist_ok=True)
     plt.rcParams.update({'font.family':'Arial','font.weight':'normal','axes.labelweight':'normal','svg.fonttype':'none','pdf.fonttype':42})
     all_counts=[]
     cmap=LinearSegmentedColormap.from_list('DeepBlueToOrange',['#4874CB','#A5C1E5','#F8F9FA','#FFD9B7','#F3891C'])
@@ -58,7 +60,7 @@ def main():
         cax.set_yticks([]);cax.set_xticks([0,128,255],[str(lo),str((lo+hi)//2),str(hi)],fontsize=12,fontweight='normal')
         cax.xaxis.set_label_position('top');cax.set_xlabel('Element Counts',fontsize=13,fontweight='normal',labelpad=10)
         for spine in cax.spines.values():spine.set_visible(False)
-        for ext in ['png','svg','pdf']:fig.savefig(out/f'Fig2b_elements_{scope}.{ext}',dpi=350,bbox_inches='tight',transparent=True)
+        for ext in ['jpg']:fig.savefig(out/f'Fig2b_elements_{scope}.{ext}',dpi=350,bbox_inches='tight',transparent=True)
         plt.close(fig)
         print(scope,'cases=',len(df),'metal species=',len(counts),'counts=',dict(counts))
     pd.DataFrame(all_counts).fillna(0).to_csv(out/'element_counts.csv',index=False)

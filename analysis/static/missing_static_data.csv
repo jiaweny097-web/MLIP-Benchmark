@@ -1,0 +1,13 @@
+task,model,missing
+surface,nequip,DFT forces absent from released surface references; force RMSE unavailable
+surface,mace,DFT forces absent from released surface references; force RMSE unavailable
+surface,sevennet,DFT forces absent from released surface references; force RMSE unavailable
+surface,dpa,DFT forces absent from released surface references; force RMSE unavailable
+surface,chgnet,DFT forces absent from released surface references; force RMSE unavailable
+surface,mattersim,DFT forces absent from released surface references; force RMSE unavailable
+sfe,nequip,"Current108-pair formation inputs/results are relaxed-pair data, not matched original static energy/force records; do not substitute them"
+sfe,mace,"Current108-pair formation inputs/results are relaxed-pair data, not matched original static energy/force records; do not substitute them"
+sfe,sevennet,"Current108-pair formation inputs/results are relaxed-pair data, not matched original static energy/force records; do not substitute them"
+sfe,dpa,"Current108-pair formation inputs/results are relaxed-pair data, not matched original static energy/force records; do not substitute them"
+sfe,chgnet,"Current108-pair formation inputs/results are relaxed-pair data, not matched original static energy/force records; do not substitute them"
+sfe,mattersim,"Current108-pair formation inputs/results are relaxed-pair data, not matched original static energy/force records; do not substitute them"
