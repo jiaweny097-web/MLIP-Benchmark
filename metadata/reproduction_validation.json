@@ -38,5 +38,23 @@
     "original_curves_modified": false,
     "model_inference_rerun": false,
     "manuscripts_modified": false
+  },
+  "update_20261125": {
+    "active_SFE_scope": "I1 and Po removed from active database",
+    "DFT_pairs": 110,
+    "common_model_pairs": 109,
+    "previous_MgCa_I2_exclusion_pairs": 108,
+    "Fig5c": "original error-strip/boxplot composite with six insets; metrics agree with paired data",
+    "Fig2b": {
+      "original_source_cases": 1801,
+      "original_source_metal_species": 59,
+      "release_reference_cases": 3814,
+      "release_reference_metal_species": 48
+    },
+    "checkpoint_hashes": "six verified",
+    "environment_export_hashes": "12 verified",
+    "catalogued_plain_PKLs": 74,
+    "manuscript_modified": false,
+    "remote_published": false
   }
 }

@@ -15,7 +15,6 @@ SFE013,fcc/Al/esf/AlMg,37,37,esf,Al47Mg,summary_energy_available
 SFE014,fcc/Al/esf/AlMn,47,47,esf,Al45Mn3,summary_energy_available
 SFE015,fcc/Al/esf/AlNa,38,38,esf,Al47Na,summary_energy_available
 SFE016,fcc/Al/esf/AlPb,39,39,esf,Al47Pb,summary_energy_available
-SFE017,fcc/Al/esf/AlPo,40,40,esf,Al47Po,summary_energy_available
 SFE018,fcc/Al/esf/AlRb,41,41,esf,Al47Rb,summary_energy_available
 SFE019,fcc/Al/esf/AlSb,42,42,esf,Al47Sb,summary_energy_available
 SFE020,fcc/Al/esf/AlSn,43,43,esf,Al47Sn,summary_energy_available
@@ -41,7 +40,6 @@ SFE039,fcc/Al/isf/AlMg,11,11,isf,Al47Mg,summary_energy_available
 SFE040,fcc/Al/isf/AlMn,21,21,isf,Al45Mn3,summary_energy_available
 SFE041,fcc/Al/isf/AlNa,12,12,isf,Al47Na,summary_energy_available
 SFE042,fcc/Al/isf/AlPb,13,13,isf,Al47Pb,summary_energy_available
-SFE043,fcc/Al/isf/AlPo,14,14,isf,Al47Po,summary_energy_available
 SFE044,fcc/Al/isf/AlRb,15,15,isf,Al47Rb,summary_energy_available
 SFE045,fcc/Al/isf/AlSb,16,16,isf,Al47Sb,summary_energy_available
 SFE046,fcc/Al/isf/AlSn,17,17,isf,Al47Sn,summary_energy_available
@@ -68,7 +66,6 @@ SFE066,fcc/Cu/esf/CuMn,94,94,esf,Cu45Mn3,summary_energy_available
 SFE067,fcc/Cu/esf/CuNa,87,87,esf,Cu45Na3,summary_energy_available
 SFE068,fcc/Cu/esf/CuNi,93,93,esf,Cu45Ni3,summary_energy_available
 SFE069,fcc/Cu/esf/CuPb,88,88,esf,Cu45Pb3,summary_energy_available
-SFE070,fcc/Cu/esf/CuPo,89,89,esf,Cu45Po3,summary_energy_available
 SFE071,fcc/Cu/esf/CuSb,90,90,esf,Cu45Sb3,summary_energy_available
 SFE072,fcc/Cu/esf/CuSn,91,91,esf,Cu45Sn3,summary_energy_available
 SFE073,fcc/Cu/esf/CuTi,95,95,esf,Cu45Ti3,summary_energy_available
@@ -91,7 +88,6 @@ SFE089,fcc/Cu/isf/CuMn,71,71,isf,Cu45Mn3,summary_energy_available
 SFE090,fcc/Cu/isf/CuNa,63,63,isf,Cu45Na3,summary_energy_available
 SFE091,fcc/Cu/isf/CuNi,70,70,isf,Cu45Ni3,summary_energy_available
 SFE092,fcc/Cu/isf/CuPb,64,64,isf,Cu45Pb3,summary_energy_available
-SFE093,fcc/Cu/isf/CuPo,65,65,isf,Cu45Po3,summary_energy_available
 SFE094,fcc/Cu/isf/CuSb,66,66,isf,Cu45Sb3,summary_energy_available
 SFE095,fcc/Cu/isf/CuSn,67,67,isf,Cu45Sn3,summary_energy_available
 SFE096,fcc/Cu/isf/CuTi,72,72,isf,Cu45Ti3,summary_energy_available

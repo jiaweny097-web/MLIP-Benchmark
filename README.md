@@ -6,7 +6,7 @@ Data and code supporting **Evaluating Universal Interatomic Potentials for Metal
 
 This benchmark evaluates six universal interatomic potentials for metallic structures, elastic response, defects, ideal tensile deformation and computational efficiency. The repository provides extracted numerical/structural data rather than full VASP output directories.
 
-**Status:** release preparation in progress. The 2026-11-25 DFT SFE v4 update is available in `data/sfe_v4` (129 directory-paired records, 125 without Po). Matching final I1 model predictions and flagged DFT references remain unresolved; see its README and audits. This snapshot is not a complete reproduction of every manuscript result. No article acceptance, DOI or finalized release is asserted.
+**Status:** release preparation in progress. All I1 and Po-containing SFE records are excluded from the active database.110 non-I1 DFT pairs remain;109 have common six-model matches. Figure5c is supplied for all109 and the labelled108-pair scope excluding the previously flagged MgCa I2 reference. Final manuscript scope and remaining checklist items require reconciliation.
 
 ## Repository structure
 
@@ -21,7 +21,8 @@ This benchmark evaluates six universal interatomic potentials for metallic struc
     │   ├── efficiency/            # Mixed inputs, convergence and timing
     │   ├── tensile/               # DFT literature/model stress-strain curves
     │   ├── sfe_partial/           # Historical FCC/HCP I2 model/source records
-    │   ├── sfe_v4/                # Updated paired DFT, structures and model audits
+    │   ├── sfe_v4/                # Retained non-I1/non-Po DFT and source audits
+    │   ├── sfe_nonI1/             #109 paired model results;108-pair sensitivity
     │   ├── catalog.csv            # Paths, counts, status and SHA-256
     │   ├── data_status.csv        # Missing fields and limitations
     │   └── verify_data.py         # Integrity and numerical checks
@@ -48,7 +49,7 @@ This benchmark evaluates six universal interatomic potentials for metallic struc
 | Surface | 504 slabs; 286 bulk structures | Six models, 504 surface-energy entries each | DFT bulk energy matched to slab atom count |
 | Relaxation efficiency | 100 mixed inputs | Six models, 100 entries each | Author-selected mixed_relaxation_benchmark-speed source |
 | Tensile response | Al, Cu, Mo, W | Four curves per model | NequIP uses author-selected nequip1 |
-| SFE | 129 v4 DFT directory pairs; 125 without Po | Historical model collections; final I1 alignment pending | ZnNi I1 nonconverged; ZnMn I2 absent; flagged references retained |
+| SFE |110 non-I1/non-Po DFT pairs |109 matched pairs per model |108-pair MgCa I2 exclusion scope also supplied; see dataset README |
 
 Counts describe supplied/extracted records, not proof of scientific validity. Status fields and units must be checked before use.
 
@@ -69,7 +70,7 @@ All six selected checkpoint files are now available locally, with hashes recorde
 
 ## Read the PKL files
 
-There are67 catalogued PKL collections. Each is a standard Python dictionary containing schema_version, task, role, dataset_status, units, metadata, sources and records. Structures and scientific fields are plain dictionaries/lists/scalars, without live ASE/pymatgen calculators. Two additional final-I1 input PKLs under `data/sfe_v4/inputs` use simple ID-to-POSCAR-text dictionaries compatible with the original inference scripts; their matching IDs are listed in `final_I1_manifest.csv`.
+There are74 catalogued PKL collections. Each is a standard Python dictionary containing schema_version, task, role, dataset_status, units, metadata, sources and records. Structures and scientific fields are plain dictionaries/lists/scalars, without live ASE/pymatgen calculators.
 
     from pathlib import Path
     import pickle
@@ -148,7 +149,7 @@ Only extracted data are distributed. Complete OUTCAR/vasprun.xml and VASP restar
 
 ## Known limitations before the manuscript release
 
-- Final HCP I1 DFT, matched predictions and final SFE pair manifest are pending.
+- I1 is excluded from the active release. Matching final I1 results are needed only if I1 claims are retained in the final manuscript; the non-I1 pairing manifest is provided.
 - Model-relaxed bulk atomic coordinates were not saved; lattice parameters alone cannot uniquely reconstruct them.
 - Tensile per-strain atomic structures are absent. The recorded source loading axis has been verified as z/σzz; the earlier DOCX versions still require the corresponding text/figure corrections and are not modified by this repository update.
 - Some static vacancy snapshots differ from relaxed formation-energy states.
@@ -168,3 +169,14 @@ The configured remote is [jiaweny097-web/MLIP-Benchmark](https://github.com/jiaw
 Original software is available for noncommercial research/education under [LICENSE-CODE.txt](LICENSE-CODE.txt). Original data/documentation are [CC BY-NC4.0](LICENSE-DATA.md). Commercial use requires separate permission. This is a noncommercial source-available release, not OSI-approved open source. Third-party data and weights retain their own terms.
 
 Scientific contacts: Chaohong Guan (guanchaohong@sjtu.edu.cn), Hong Zhu (hong.zhu@sjtu.edu.cn), Xiaoqin Zeng (xqzeng@sjtu.edu.cn).
+
+## Non-I1 SFE update (2026-11-25)
+
+`data/sfe_nonI1` contains 109 common directory/structure-paired results per model.
+`analysis/sfe_nonI1` provides the full 109-pair comparison and a labelled
+108-pair sensitivity excluding the previously flagged MgCa I2 reference.
+All I1 data are excluded from both plots. Reproduce with
+`python code/plot_sfe_nonI1.py`. See the dataset README for exclusions and
+source-block pairing rules. Final I1 comparison remains pending.
+
+Figure updates: `python code/plot_fig5c_nonI1.py` restores the original error-distribution composite; `python code/plot_fig2b_coverage.py` regenerates original-source and current-reference coverage with explicit source rows. See RELEASE_CHECKLIST.md for the refreshed local audit.

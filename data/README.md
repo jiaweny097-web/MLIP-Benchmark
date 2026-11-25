@@ -26,9 +26,8 @@ Tasks:
   NequIP uses nequip1, selected by the author. Source stress-axis labels are preserved.
 - sfe_partial:historical FCC and HCP I2 source-extracted data only; I1 omitted from this collection.
   No legacy derived SFE metrics are promoted; reference pairing still requires final path review.
-- sfe_v4:129 directory-paired DFT references from the updated fault summary, including final
-  I1 input structures and separate model-version audits. 125 pairs do not contain Po.
-  Flagged energies are preserved; this is not a completed six-model I1 evaluation.
+- sfe_v4:110 retained non-I1/non-Po DFT pairs and source tables. I1-only inputs and audits have been moved outside the upload database.
+- sfe_nonI1:109 common six-model pairs, plus an explicitly labelled108-pair sensitivity excluding MgCa I2.
 
 No missing structure is fabricated from its DFT reference. Bulk model relaxed coordinates
 and tensile per-strain atomic structures are absent in the supplied summaries, and are
@@ -40,3 +39,6 @@ data-quality questions. Full prior data and original simulations remain backed u
 outside the upload repository; historical exclusion records remain in metadata.
 
 Surface update:504 slab and matched-bulk total energies are included in surface/dft/reference.pkl, verified by (E_slab-E_bulk_matched)/(2A). Maximum reconstruction residual is below9e-8 J/m2. The matched bulk energy has been scaled to the slab atom count; absolute energy zeroes need not match uMLIP totals.
+
+Non-I1 evaluation: see sfe_nonI1/README.md for 109 common model pairs,
+plus explicitly labelled 108-pair sensitivity excluding MgCa I2.

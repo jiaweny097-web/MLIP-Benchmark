@@ -7,5 +7,5 @@
   "RAM_GB": 60,
   "framework": "PyTorch 2.7.0",
   "OS": "Ubuntu 24.04",
-  "note": "Notebook output evidence includes other versions for individual cells; retain it separately. Exact per-run exports and checkpoint hashes not supplied."
+  "note": "Hardware and PyTorch2.7.0 describe the author-reported base image. Six original and portable Conda exports and selected checkpoint SHA-256 values are supplied. Exports record torch2.9.1 or2.5.1+cu121; exact historical per-run versions and server driver remain unconfirmed."
 }

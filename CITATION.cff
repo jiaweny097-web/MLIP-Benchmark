@@ -17,4 +17,4 @@ authors:
     given-names: Xiaoqin
 repository-code: "https://github.com/jiaweny097-web/MLIP-Benchmark"
 url: "https://github.com/jiaweny097-web/MLIP-Benchmark"
-abstract: "Extracted reference data, model predictions and rerun workflows for metallic bulk, elastic, vacancy, surface, tensile and relaxation benchmarks. The current SFE collection is partial; final HCP I1 is pending."
+abstract: "Extracted reference data, model predictions and rerun workflows for metallic bulk, elastic, vacancy, surface, tensile and relaxation benchmarks. The current SFE evaluation excludes I1 and Po-containing records; see the release scope and exclusions."

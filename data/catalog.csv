@@ -1,68 +1,75 @@
 path,task,role,records,bytes,sha256,status
 bulk_elastic/dft/reference.pkl,bulk_elastic,dft,3098,4142946,418ade7fc70f8e0002c5451b5f6a8af8d611dc65d2a7436860bf77fca368b51c,extracted; no inference rerun
-bulk_elastic/predictions/nequip.pkl,bulk_elastic,predictions,3098,1110249,2b006a13d04de2a81943a3d3701a7d7067b5e775b46bfdaed1f6467ddc626ebc,extracted; no inference rerun
-static calculation/static_bulk/predictions/nequip.pkl,static_bulk,predictions,3098,749284,259aebdeb5fa7aa8d02c0db46f4034d8b83685133a1bdc56648598167b0fcf4a,extracted; no inference rerun
-bulk_elastic/predictions/mace.pkl,bulk_elastic,predictions,3098,1110119,a560fbf6806767d44f252cac610d6a3894d9f81b420e60923233390335fe0f2a,extracted; no inference rerun
-static calculation/static_bulk/predictions/mace.pkl,static_bulk,predictions,3098,749280,887074a2715f59097bb5831e3337d93a881d962694debd70c92e348c6375ee4d,extracted; no inference rerun
-bulk_elastic/predictions/sevennet.pkl,bulk_elastic,predictions,3098,1108968,b9dbb7cfa26e8b87106b43db527f3e380c4919bba62f6605b1f84e232599aa16,extracted; no inference rerun
-static calculation/static_bulk/predictions/sevennet.pkl,static_bulk,predictions,3098,749288,563dbc5a4ec9aa002cc442400c3d8bff957010f0f53c5ec5cf17375da5a02f88,extracted; no inference rerun
-bulk_elastic/predictions/dpa.pkl,bulk_elastic,predictions,3098,1109989,7a9de8aa2d382b867136b71f29b8f95b4ff9ce1fa659f9c5cbb2f6b053419051,extracted; no inference rerun
-static calculation/static_bulk/predictions/dpa.pkl,static_bulk,predictions,3098,749278,65b7290cb061123334c4e08402e8fcab2596c637cd40279ff5494114da0ae8e6,extracted; no inference rerun
 bulk_elastic/predictions/chgnet.pkl,bulk_elastic,predictions,3098,1110249,f88fdf4ae79fe500392d248a8a5af098b4a5c4bd52fa070d46720627fc24bfe7,extracted; no inference rerun
-static calculation/static_bulk/predictions/chgnet.pkl,static_bulk,predictions,3098,749284,406b379d43f54ca5d5ec2b1d1b32b856aae409b8ce2717b1e3e47f3d17f4aca9,extracted; no inference rerun
+bulk_elastic/predictions/dpa.pkl,bulk_elastic,predictions,3098,1109989,7a9de8aa2d382b867136b71f29b8f95b4ff9ce1fa659f9c5cbb2f6b053419051,extracted; no inference rerun
+bulk_elastic/predictions/mace.pkl,bulk_elastic,predictions,3098,1110119,a560fbf6806767d44f252cac610d6a3894d9f81b420e60923233390335fe0f2a,extracted; no inference rerun
 bulk_elastic/predictions/mattersim.pkl,bulk_elastic,predictions,3098,1109316,a63b08a8c20aa2bb32b970c70587c213a69523b38325e1ae2c22e92a9fa5e8c4,extracted; no inference rerun
-static calculation/static_bulk/predictions/mattersim.pkl,static_bulk,predictions,3098,749290,6ba2eeca2a9a8b2303878173a3f8534cce021f1207cc4c67a4016b82392fbf55,extracted; no inference rerun
-static calculation/static_bulk/dft/reference.pkl,static_bulk,dft,3098,119044,1b87627455db43f9f0a3c22e1aa44be836169a853f43f66704a1e231b8b6a284,extracted; no inference rerun
-vacancy/dft/reference.pkl,vacancy,dft,100,492426,7625fd66076c4a20a69fc8867b8299fe4d5a2bf6d0d60a6145c6f639bef01220,extracted; no inference rerun
-vacancy/dft/chemical_potentials.pkl,vacancy,dft,6,1925,ddefeaf6e0507567e9eb2c737a8fe245069d20cbc51814566e71b12adf038ef5,extracted; no inference rerun
-vacancy/predictions/nequip.pkl,vacancy,predictions,100,397009,ec1ec451cec8a92d9b407aec3f80292fa3cfb9227d832c299ab924646b13ae74,extracted; no inference rerun
-static calculation/static_vacancy/predictions/nequip.pkl,static_vacancy,predictions,100,168572,3f6f1ea0e0723443d0e4553e58aadf7b4329b23a8b2274ca56e8bdbeac27f52f,extracted; no inference rerun
-vacancy/predictions/mace.pkl,vacancy,predictions,100,396984,387797253c4534aa6772532308fa40b2891012dea5db45f4a1b91158844ca67f,extracted; no inference rerun
-static calculation/static_vacancy/predictions/mace.pkl,static_vacancy,predictions,100,168568,87445000b92e1537e51c6f8a1d8f9f54140692ce3ef27dbaadd7ace1c81df472,extracted; no inference rerun
-vacancy/predictions/sevennet.pkl,vacancy,predictions,100,396992,5a12902c18d7ca236dbe3032ac7fcb349f1597b768700aeacaad27a78f19a582,extracted; no inference rerun
-static calculation/static_vacancy/predictions/sevennet.pkl,static_vacancy,predictions,100,168576,2b5cd5d025094a2855d7109eb6e6ac00767912c43b430b1e1be02e371a495699,extracted; no inference rerun
-vacancy/predictions/dpa.pkl,vacancy,predictions,100,396982,bd49520ee533ce946e6343aff55b4aca46b7055dfa8396c0ffa106ced57ab318,extracted; no inference rerun
-static calculation/static_vacancy/predictions/dpa.pkl,static_vacancy,predictions,100,168566,de5385da32402be29445b84745954fd90ff604fd942ecb3c74ae3ebe3f214227,extracted; no inference rerun
-vacancy/predictions/chgnet.pkl,vacancy,predictions,100,396988,903aebcf62422ff0344622bf46d97a3534c3bf518cec3793af0c8174bac23328,extracted; no inference rerun
-static calculation/static_vacancy/predictions/chgnet.pkl,static_vacancy,predictions,100,168572,4954c89930101f246c6633da6c74ff1cbe9bfee25b0f91c98064a8174e132ad2,extracted; no inference rerun
-vacancy/predictions/mattersim.pkl,vacancy,predictions,100,396994,79479ac9fc07235e38b69d12fbe19dbba3b724d03751e310eb91adfd9d9d8eb4,extracted; no inference rerun
-static calculation/static_vacancy/predictions/mattersim.pkl,static_vacancy,predictions,100,168578,507619b2d0de0c50feb1405e153aa41e961ef02a9e6484e1f27946daad49a229,extracted; no inference rerun
-static calculation/static_vacancy/dft/snapshots.pkl,static_vacancy,dft,100,199600,45b689fdf1c3fddba6a9aff21595508e66d809c5d34396b166c5458956cf5dce,extracted snapshot collection; exact snapshot correspondence to predictions requires verification
-surface/predictions/nequip.pkl,surface,predictions,504,597069,556c1958a73dbb2ce9ed912eb871c563d88dbe38b35d94b3506cd6ca547b45d4,extracted; no inference rerun
-surface/predictions/mace.pkl,surface,predictions,504,597063,3de37a84b9872d802b7be0df103b9ecbb60f81e987b4472631d4e0c50bc0c812,extracted; no inference rerun
-surface/predictions/sevennet.pkl,surface,predictions,504,597075,cf87067ea0e78de7315c60cac202418a358f4b40ba884afea95e5baa12d08fbd,extracted; no inference rerun
-surface/predictions/dpa.pkl,surface,predictions,504,597060,1d69dce584806a22d077c66ed838d2b6d306b7a0520deec669066febdaa63d81,extracted; no inference rerun
-surface/predictions/chgnet.pkl,surface,predictions,504,597069,e739b231aba32f765b69f2b877a27c89574c48886ead3d4e6b20c506c4df4902,extracted; no inference rerun
-surface/predictions/mattersim.pkl,surface,predictions,504,597078,d4f59197a394366f0e520ac35a18aca6d652424d753951764308d9315a6edbcc,extracted; no inference rerun
-surface/dft/reference.pkl,surface,dft,504,711487,2dffe4f27eabed0cd5ec030b66c5c46e914881ab70011f6b939ca6726b9faeaa,extracted; no inference rerun
-surface/dft/bulk_structures.pkl,surface,dft,286,132602,6d7a91e439cf162a922dfb86c376dc02b9bc23d94fa28498507044a850f7b7d1,extracted; no inference rerun
+bulk_elastic/predictions/nequip.pkl,bulk_elastic,predictions,3098,1110249,2b006a13d04de2a81943a3d3701a7d7067b5e775b46bfdaed1f6467ddc626ebc,extracted; no inference rerun
+bulk_elastic/predictions/sevennet.pkl,bulk_elastic,predictions,3098,1108968,b9dbb7cfa26e8b87106b43db527f3e380c4919bba62f6605b1f84e232599aa16,extracted; no inference rerun
 efficiency/inputs/structures.pkl,efficiency,inputs,100,132819,40f8ff7768d4e095d93d62435faf861a0c926ff18c9f48ec35cc56c1d67de7a1,"100 mixed inputs, matched by task_key to all six supplied speed runs"
-efficiency/predictions/nequip.pkl,efficiency,predictions,100,300771,0fb3b97f2954928019aa2b4b38cc2ac41fc2a347c2a54ba9c2fca7970c6a0444,extracted; no inference rerun
-efficiency/predictions/mace.pkl,efficiency,predictions,100,300769,fa305a95211b5a1ae1cf025b8aefdff4f10dda17a4fd04d639024c5e7ecfc63f,extracted; no inference rerun
-efficiency/predictions/sevennet.pkl,efficiency,predictions,100,300773,2c6a9568b3563703ad9470e4bd42096ea1f2e67d99062a8b35961aa1da1368c7,extracted; no inference rerun
-efficiency/predictions/dpa.pkl,efficiency,predictions,100,211948,ca1c4bfafc8f832410db282fa07828f8a8d25a3a57f01e7c3ff7e1cd6c38758a,extracted; no inference rerun
 efficiency/predictions/chgnet.pkl,efficiency,predictions,100,289571,f292ab09ab5f0edafb6c2a92ed3683bdfd7575ebb3a54c78d5b43e770e780f52,extracted; no inference rerun
+efficiency/predictions/dpa.pkl,efficiency,predictions,100,211948,ca1c4bfafc8f832410db282fa07828f8a8d25a3a57f01e7c3ff7e1cd6c38758a,extracted; no inference rerun
+efficiency/predictions/mace.pkl,efficiency,predictions,100,300769,fa305a95211b5a1ae1cf025b8aefdff4f10dda17a4fd04d639024c5e7ecfc63f,extracted; no inference rerun
 efficiency/predictions/mattersim.pkl,efficiency,predictions,100,300774,60e139d57c23011150da005c5c959b7cd8615fb87dad6639d0975fdf12166a90,extracted; no inference rerun
+efficiency/predictions/nequip.pkl,efficiency,predictions,100,300771,0fb3b97f2954928019aa2b4b38cc2ac41fc2a347c2a54ba9c2fca7970c6a0444,extracted; no inference rerun
+efficiency/predictions/sevennet.pkl,efficiency,predictions,100,300773,2c6a9568b3563703ad9470e4bd42096ea1f2e67d99062a8b35961aa1da1368c7,extracted; no inference rerun
 efficiency/summaries/pareto_metrics.pkl,efficiency,summaries,6,855,b8f97cb01a468cf1078ec9811a690bcaccc9595d09bf91fbcc64c7dd8ad5db0e,published-source efficiency summary retained; aggregation convention documented by source
+sfe_nonI1/chgnet.pkl,sfe_nonI1,predictions,109,389212,0882581b0ab97c114945ea4e0ce7cb84849a23c4959b6100b626c32f90306ec0,Active non-I1 SFE release; Po-containing records removed; see sfe_nonI1/README.md for evaluation coverage
+sfe_nonI1/dpa.pkl,sfe_nonI1,predictions,109,389209,1fb2b2c0fe9f5d29189da33fc5f3e98ae7906ff95eee7aa0f005cbdc2dd160f7,Active non-I1 SFE release; Po-containing records removed; see sfe_nonI1/README.md for evaluation coverage
+sfe_nonI1/mace.pkl,sfe_nonI1,predictions,109,389210,92b5d515b510e8eabbf94f72f7d975e2709d39914319b72d24523fd4c6a672fd,Active non-I1 SFE release; Po-containing records removed; see sfe_nonI1/README.md for evaluation coverage
+sfe_nonI1/mattersim.pkl,sfe_nonI1,predictions,109,389215,c626e11d720df391fbe6e8ec8e5723cb7ac5b165c797a9e00b3ad6f97a09b40f,Active non-I1 SFE release; Po-containing records removed; see sfe_nonI1/README.md for evaluation coverage
+sfe_nonI1/nequip.pkl,sfe_nonI1,predictions,109,389212,ef4a247520919487421757021d32138513b4c93f7bea6508c319339689e7e8d1,Active non-I1 SFE release; Po-containing records removed; see sfe_nonI1/README.md for evaluation coverage
+sfe_nonI1/reference.pkl,sfe,dft,110,1372864,49f997bc5ed42116d5cb10bd267e08ac1bf85a850cbfc74ceb8a46653a0c7818,Active non-I1 SFE release; Po-containing records removed; see sfe_nonI1/README.md for evaluation coverage
+sfe_nonI1/sevennet.pkl,sfe_nonI1,predictions,109,389214,1d84e14a42abbf8475e9045970d70a465e651b7fff9822771bbabc91da592d43,Active non-I1 SFE release; Po-containing records removed; see sfe_nonI1/README.md for evaluation coverage
+sfe_partial/dft/fcc_hcp_i2.pkl,sfe_partial,dft,107,275236,2e750cb33e0ca011957525c51bdedf397507aead3944af0e0ac35cf42674b8f4,Active non-I1 SFE release; Po-containing records removed; see sfe_nonI1/README.md for evaluation coverage
+sfe_partial/inputs/perfect_candidates.pkl,sfe_partial,inputs,110,259725,d7f59fa896f7828c4cca081b9c139b40891d8523bd815f8dd84df039cf4534b0,Active non-I1 SFE release; Po-containing records removed; see sfe_nonI1/README.md for evaluation coverage
+sfe_partial/predictions/chgnet_fault.pkl,sfe_partial,predictions,111,697127,84fe9c81bca0325b80e201be2ae9be52e28a588c63f60d405f9b77d5da415f31,Active non-I1 SFE release; Po-containing records removed; see sfe_nonI1/README.md for evaluation coverage
+sfe_partial/predictions/chgnet_perfect.pkl,sfe_partial,predictions,109,524290,9062b8c71c94562973e4d17e25191ce6af635b28772293663b205a7d3f304114,Active non-I1 SFE release; Po-containing records removed; see sfe_nonI1/README.md for evaluation coverage
+sfe_partial/predictions/dpa_fault.pkl,sfe_partial,predictions,111,529274,911d5ff595a6f5adbec444a26946b49ccd2ffd460f8a4114aa310b5008331b3d,Active non-I1 SFE release; Po-containing records removed; see sfe_nonI1/README.md for evaluation coverage
+sfe_partial/predictions/dpa_perfect.pkl,sfe_partial,predictions,109,359461,55a8e310a9ddfc2c5023d5139381bcb86796dcd0810610f92deba4351db7ce7f,Active non-I1 SFE release; Po-containing records removed; see sfe_nonI1/README.md for evaluation coverage
+sfe_partial/predictions/mace_fault.pkl,sfe_partial,predictions,111,697125,910664ab4150e2f648fac1936ce518ed2da9de9b2ad1f59a8b7341d4d74e3091,Active non-I1 SFE release; Po-containing records removed; see sfe_nonI1/README.md for evaluation coverage
+sfe_partial/predictions/mace_perfect.pkl,sfe_partial,predictions,109,524288,a723564fdbeff9c4f604840332b3c7bc14fee22a8157759006ee8aecb7fd2282,Active non-I1 SFE release; Po-containing records removed; see sfe_nonI1/README.md for evaluation coverage
+sfe_partial/predictions/mattersim_fault.pkl,sfe_partial,predictions,111,709559,511d9099a65198a4a8e41e20c8b037bf1b9abe1dc3f30446b863b4fff777c780,Active non-I1 SFE release; Po-containing records removed; see sfe_nonI1/README.md for evaluation coverage
+sfe_partial/predictions/mattersim_perfect.pkl,sfe_partial,predictions,110,542927,98fa8af4b716fb33f52028bff762bd8143aa618998f99bf3b60e4d48e7b965f8,Active non-I1 SFE release; Po-containing records removed; see sfe_nonI1/README.md for evaluation coverage
+sfe_partial/predictions/nequip_fault.pkl,sfe_partial,predictions,111,697124,43076a9cd404d202527a4452ecd4d26fafda0ac0baa7232ea63a9ea4143bbf84,Active non-I1 SFE release; Po-containing records removed; see sfe_nonI1/README.md for evaluation coverage
+sfe_partial/predictions/nequip_perfect.pkl,sfe_partial,predictions,109,524290,df5d1f6efa330e7cd6f8ccc2f2fecb76031f19241deb0be1058ef1e3800332d2,Active non-I1 SFE release; Po-containing records removed; see sfe_nonI1/README.md for evaluation coverage
+sfe_partial/predictions/sevennet_fault.pkl,sfe_partial,predictions,111,709561,5e0ce21fe16d0f11d0e48d9c9298bc1e3cc8ddfca5739056fc91be4ce2f73094,Active non-I1 SFE release; Po-containing records removed; see sfe_nonI1/README.md for evaluation coverage
+sfe_partial/predictions/sevennet_perfect.pkl,sfe_partial,predictions,109,536509,c7d6a6ecc33b7441a9130637615edef89d9669cd4ee8cf0e4fc5668f982b6269,Active non-I1 SFE release; Po-containing records removed; see sfe_nonI1/README.md for evaluation coverage
+sfe_v4/dft_reference.pkl,sfe,dft,110,1372864,49f997bc5ed42116d5cb10bd267e08ac1bf85a850cbfc74ceb8a46653a0c7818,Active non-I1 SFE release; Po-containing records removed; see sfe_nonI1/README.md for evaluation coverage
+static calculation/static_bulk/dft/reference.pkl,static_bulk,dft,3098,119044,1b87627455db43f9f0a3c22e1aa44be836169a853f43f66704a1e231b8b6a284,extracted; no inference rerun
+static calculation/static_bulk/predictions/chgnet.pkl,static_bulk,predictions,3098,749284,406b379d43f54ca5d5ec2b1d1b32b856aae409b8ce2717b1e3e47f3d17f4aca9,extracted; no inference rerun
+static calculation/static_bulk/predictions/dpa.pkl,static_bulk,predictions,3098,749278,65b7290cb061123334c4e08402e8fcab2596c637cd40279ff5494114da0ae8e6,extracted; no inference rerun
+static calculation/static_bulk/predictions/mace.pkl,static_bulk,predictions,3098,749280,887074a2715f59097bb5831e3337d93a881d962694debd70c92e348c6375ee4d,extracted; no inference rerun
+static calculation/static_bulk/predictions/mattersim.pkl,static_bulk,predictions,3098,749290,6ba2eeca2a9a8b2303878173a3f8534cce021f1207cc4c67a4016b82392fbf55,extracted; no inference rerun
+static calculation/static_bulk/predictions/nequip.pkl,static_bulk,predictions,3098,749284,259aebdeb5fa7aa8d02c0db46f4034d8b83685133a1bdc56648598167b0fcf4a,extracted; no inference rerun
+static calculation/static_bulk/predictions/sevennet.pkl,static_bulk,predictions,3098,749288,563dbc5a4ec9aa002cc442400c3d8bff957010f0f53c5ec5cf17375da5a02f88,extracted; no inference rerun
+static calculation/static_vacancy/dft/snapshots.pkl,static_vacancy,dft,100,199600,45b689fdf1c3fddba6a9aff21595508e66d809c5d34396b166c5458956cf5dce,extracted snapshot collection; exact snapshot correspondence to predictions requires verification
+static calculation/static_vacancy/predictions/chgnet.pkl,static_vacancy,predictions,100,168572,4954c89930101f246c6633da6c74ff1cbe9bfee25b0f91c98064a8174e132ad2,extracted; no inference rerun
+static calculation/static_vacancy/predictions/dpa.pkl,static_vacancy,predictions,100,168566,de5385da32402be29445b84745954fd90ff604fd942ecb3c74ae3ebe3f214227,extracted; no inference rerun
+static calculation/static_vacancy/predictions/mace.pkl,static_vacancy,predictions,100,168568,87445000b92e1537e51c6f8a1d8f9f54140692ce3ef27dbaadd7ace1c81df472,extracted; no inference rerun
+static calculation/static_vacancy/predictions/mattersim.pkl,static_vacancy,predictions,100,168578,507619b2d0de0c50feb1405e153aa41e961ef02a9e6484e1f27946daad49a229,extracted; no inference rerun
+static calculation/static_vacancy/predictions/nequip.pkl,static_vacancy,predictions,100,168572,3f6f1ea0e0723443d0e4553e58aadf7b4329b23a8b2274ca56e8bdbeac27f52f,extracted; no inference rerun
+static calculation/static_vacancy/predictions/sevennet.pkl,static_vacancy,predictions,100,168576,2b5cd5d025094a2855d7109eb6e6ac00767912c43b430b1e1be02e371a495699,extracted; no inference rerun
+surface/dft/bulk_structures.pkl,surface,dft,286,132602,6d7a91e439cf162a922dfb86c376dc02b9bc23d94fa28498507044a850f7b7d1,extracted; no inference rerun
+surface/dft/reference.pkl,surface,dft,504,711487,2dffe4f27eabed0cd5ec030b66c5c46e914881ab70011f6b939ca6726b9faeaa,extracted; no inference rerun
+surface/predictions/chgnet.pkl,surface,predictions,504,597069,e739b231aba32f765b69f2b877a27c89574c48886ead3d4e6b20c506c4df4902,extracted; no inference rerun
+surface/predictions/dpa.pkl,surface,predictions,504,597060,1d69dce584806a22d077c66ed838d2b6d306b7a0520deec669066febdaa63d81,extracted; no inference rerun
+surface/predictions/mace.pkl,surface,predictions,504,597063,3de37a84b9872d802b7be0df103b9ecbb60f81e987b4472631d4e0c50bc0c812,extracted; no inference rerun
+surface/predictions/mattersim.pkl,surface,predictions,504,597078,d4f59197a394366f0e520ac35a18aca6d652424d753951764308d9315a6edbcc,extracted; no inference rerun
+surface/predictions/nequip.pkl,surface,predictions,504,597069,556c1958a73dbb2ce9ed912eb871c563d88dbe38b35d94b3506cd6ca547b45d4,extracted; no inference rerun
+surface/predictions/sevennet.pkl,surface,predictions,504,597075,cf87067ea0e78de7315c60cac202418a358f4b40ba884afea95e5baa12d08fbd,extracted; no inference rerun
 tensile/dft/reference.pkl,tensile,dft,4,6144,e5d2b68fe932abeb6753ff23e1ae66463e98b515c0ebc5507b13266de1dc1352,literature reference curves and supplied initial CIF; source axes preserved
-tensile/predictions/nequip.pkl,tensile,predictions,4,18174,3c27f3aae5034ff354f5316021922f03aedbe0b22c29e10002ba1434081833ab,extracted; no inference rerun
-tensile/predictions/mace.pkl,tensile,predictions,4,18159,2d1ce3a592038a45c5ac81e18cfa188b451bc80b41166bebb139fb35b352484e,extracted; no inference rerun
-tensile/predictions/sevennet.pkl,tensile,predictions,4,18179,fc6ac78b869d10d69eac8ede3a795065d2448c73cced357c4316ecd6e74a99db,extracted; no inference rerun
-tensile/predictions/dpa.pkl,tensile,predictions,4,18154,e004d8323292d247a2da19cde504714a454f2b5c21bcea3b630333e1a211af17,extracted; no inference rerun
 tensile/predictions/chgnet.pkl,tensile,predictions,4,18169,97edfc2f957fc9ef467b37179ffb8c94b969250bcc8abcbc6236b8d155cde978,extracted; no inference rerun
+tensile/predictions/dpa.pkl,tensile,predictions,4,18154,e004d8323292d247a2da19cde504714a454f2b5c21bcea3b630333e1a211af17,extracted; no inference rerun
+tensile/predictions/mace.pkl,tensile,predictions,4,18159,2d1ce3a592038a45c5ac81e18cfa188b451bc80b41166bebb139fb35b352484e,extracted; no inference rerun
 tensile/predictions/mattersim.pkl,tensile,predictions,4,18184,913dc435e6058a94b948589a3ccd2ee53434b6d14a475a8c05f843a23f9144cd,extracted; no inference rerun
-sfe_partial/dft/fcc_hcp_i2.pkl,sfe_partial,dft,107,275133,6cd42d305a85b15aeb4b91d720b14ef3c2e7975e6cfbcf03222d874750fc8d66,partial extraction; final I1 omitted; previous SFE pairings need same-type directory review
-sfe_partial/inputs/perfect_candidates.pkl,sfe_partial,inputs,131,309105,0e835ba0b54c60a1dfe9a889c8a07f799c6af6519f5ce5f71ffb492c1e6a12bf,"shared perfect input pool; includes potentially shared references, no final I1 evaluation"
-sfe_partial/predictions/nequip_fault.pkl,sfe_partial,predictions,111,697022,626d5a881e0ee92fa2c37cd2f8be5a3e9c679977dc20e78d0432499809f39c90,consolidated source outputs only; no automatic numeric-ID pairing; I1 fault outputs excluded
-sfe_partial/predictions/nequip_perfect.pkl,sfe_partial,predictions,127,615151,620c4f9504615e15b73a27529be392cc3a38cc0799fd5872171dc54158842a5f,consolidated source outputs only; no automatic numeric-ID pairing; I1 fault outputs excluded
-sfe_partial/predictions/mace_fault.pkl,sfe_partial,predictions,111,697023,b9b5dfd177cba2a004148d7b6a7d81022c0a5d9aa017774ac1a1a8e86676a771,consolidated source outputs only; no automatic numeric-ID pairing; I1 fault outputs excluded
-sfe_partial/predictions/mace_perfect.pkl,sfe_partial,predictions,127,615149,51a4e8d3d9b9afe5384e87dd3c1309332f9c0fbc9147a5d372d5d49640b9297f,consolidated source outputs only; no automatic numeric-ID pairing; I1 fault outputs excluded
-sfe_partial/predictions/sevennet_fault.pkl,sfe_partial,predictions,111,709459,a6400aef7e60786df70373bd0d1f5bfa0c1dcb7736b0a03fb29856797a2bf463,consolidated source outputs only; no automatic numeric-ID pairing; I1 fault outputs excluded
-sfe_partial/predictions/sevennet_perfect.pkl,sfe_partial,predictions,127,629377,ba4f27559300446ca89eca5dc33b5294f6620038c86d78a4b2f0371946117b70,consolidated source outputs only; no automatic numeric-ID pairing; I1 fault outputs excluded
-sfe_partial/predictions/dpa_fault.pkl,sfe_partial,predictions,115,548158,1eed98ca09ae937eb5ede08190b29dfcc5e570b37d6ce60570aa86d6f1d07679,consolidated source outputs only; no automatic numeric-ID pairing; I1 fault outputs excluded
-sfe_partial/predictions/dpa_perfect.pkl,sfe_partial,predictions,131,436257,0885dc7951b1a4c956c163b00da724c1d4b48758b5d3d0a54be7d485f89f36c0,consolidated source outputs only; no automatic numeric-ID pairing; I1 fault outputs excluded
-sfe_partial/predictions/chgnet_fault.pkl,sfe_partial,predictions,115,722068,ca6a5ec5cb4978764f67d4c6bb58d1762bb1824a0608157db8d0a2112b1b150c,consolidated source outputs only; no automatic numeric-ID pairing; I1 fault outputs excluded
-sfe_partial/predictions/chgnet_perfect.pkl,sfe_partial,predictions,131,634359,a9a4b43b25f4fd1b4d0f3555c623330725f777cb6191068458b2688a95686f0d,consolidated source outputs only; no automatic numeric-ID pairing; I1 fault outputs excluded
-sfe_partial/predictions/mattersim_fault.pkl,sfe_partial,predictions,115,734948,e966f89b3de46b4b98a1974c901c93125fd62b1f17dcd60f382f49375b420206,consolidated source outputs only; no automatic numeric-ID pairing; I1 fault outputs excluded
-sfe_partial/predictions/mattersim_perfect.pkl,sfe_partial,predictions,131,649034,d33e2b4e15d78c537714faa212367790b28d463e1ae47776b079a848a688a0f8,consolidated source outputs only; no automatic numeric-ID pairing; I1 fault outputs excluded
-sfe_v4/dft_reference.pkl,sfe,dft,129,1679673,f6cbb3f5b8cb96e080c4562dc58c94a7976884037692b253957828f1b7a668b8,v4 source extraction; flagged records retained; final model alignment pending
+tensile/predictions/nequip.pkl,tensile,predictions,4,18174,3c27f3aae5034ff354f5316021922f03aedbe0b22c29e10002ba1434081833ab,extracted; no inference rerun
+tensile/predictions/sevennet.pkl,tensile,predictions,4,18179,fc6ac78b869d10d69eac8ede3a795065d2448c73cced357c4316ecd6e74a99db,extracted; no inference rerun
+vacancy/dft/chemical_potentials.pkl,vacancy,dft,6,1925,ddefeaf6e0507567e9eb2c737a8fe245069d20cbc51814566e71b12adf038ef5,extracted; no inference rerun
+vacancy/dft/reference.pkl,vacancy,dft,100,492426,7625fd66076c4a20a69fc8867b8299fe4d5a2bf6d0d60a6145c6f639bef01220,extracted; no inference rerun
+vacancy/predictions/chgnet.pkl,vacancy,predictions,100,396988,903aebcf62422ff0344622bf46d97a3534c3bf518cec3793af0c8174bac23328,extracted; no inference rerun
+vacancy/predictions/dpa.pkl,vacancy,predictions,100,396982,bd49520ee533ce946e6343aff55b4aca46b7055dfa8396c0ffa106ced57ab318,extracted; no inference rerun
+vacancy/predictions/mace.pkl,vacancy,predictions,100,396984,387797253c4534aa6772532308fa40b2891012dea5db45f4a1b91158844ca67f,extracted; no inference rerun
+vacancy/predictions/mattersim.pkl,vacancy,predictions,100,396994,79479ac9fc07235e38b69d12fbe19dbba3b724d03751e310eb91adfd9d9d8eb4,extracted; no inference rerun
+vacancy/predictions/nequip.pkl,vacancy,predictions,100,397009,ec1ec451cec8a92d9b407aec3f80292fa3cfb9227d832c299ab924646b13ae74,extracted; no inference rerun
+vacancy/predictions/sevennet.pkl,vacancy,predictions,100,396992,5a12902c18d7ca236dbe3032ac7fcb349f1597b768700aeacaad27a78f19a582,extracted; no inference rerun

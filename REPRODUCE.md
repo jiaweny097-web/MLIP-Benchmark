@@ -24,9 +24,9 @@ environments were created.
 python data/verify_data.py
 ```
 
-This checks all 66 PKL envelopes, record counts and hashes, six-model ID coverage,
+This checks all catalogued PKL envelopes, record counts and hashes, six-model ID coverage,
 vacancy formation-energy equations, the 504 surface-energy reconstructions and the
-absence of final I1 records.
+exclusion of I1 from active SFE records.
 
 ## Recompute available paper analyses
 
@@ -42,7 +42,7 @@ scope is saved in `results/paper_reproduction/scope.json`.
 |---|---|---|---|
 | Bulk lattice and elastic indicators | `--task bulk` | `bulk_lattice_elastic_metrics.csv`, `Fig3c_Fig4_available_*.png`, `SI_invalid_elastic_pairs.csv` | Reports both all-finite results and the historical MAPE<=50% filter with sample counts |
 | Derived Pugh/Cauchy descriptors | `--task bulk` | `Table2_metallurgical_metrics.csv` | Uses the archived structure classification and explicit valid-pair counts |
-| Vacancy and surface panels | `--task defects` | `Fig5ab_vacancy_surface.png`, `Fig5ab_metrics.csv` | SFE panel is intentionally absent while final I1 is pending |
+| Vacancy and surface panels | `--task defects` | `Fig5ab_vacancy_surface.png`, `Fig5ab_metrics.csv` | SFE has a separate non-I1 entry point: code/plot_fig5c_nonI1.py |
 | Ideal tensile curves and Table 3 metrics | `--task tensile` | `Fig6_Mo_sigmaZZ.png`, `Fig6_W_sigmaZZ.png`, `Fig6_Cu_sigmaZZ.png`, `Fig6_Al_sigmaZZ.png` (and SVG), `tensile_peak_values.csv`, `Table3_all_six_metrics.csv` | Four separate figures: Mo/W/Cu use their DFT maximum strains; Al uses the model-test maximum (50%). No legends or model extrapolation. NequIP uses `nequip1`; loading axis z/σzz |
 | Relaxation-efficiency/Pareto input | `--task efficiency` | `Fig7a_efficiency.png`, `Fig7_efficiency_pareto.csv` | Recomputes the source arithmetic mean of stored `time_per_step`, including the source zero-step convention |
 | Retained static subsets | `--task static` | `static_task_metrics_only.csv` | Bulk and vacancy subsets only; not the original global Figure 3 aggregate |
@@ -75,11 +75,15 @@ versions used.
 
 ## Pending work
 
-- Complete final HCP I1 DFT and matching six-model calculations.
-- Publish the final SFE pair manifest and rerun the SFE analysis.
+- Align the final manuscript with the current non-I1 release scope; I1 reruns are required only if I1 claims are retained.
+- Non-I1 SFE pairs and Figure5c analysis are provided; resolve the flagged references and unmatched ZnTi I2 before claiming broader coverage.
 - The tensile loading axis is verified as z/σzz. Existing DOCX files retain their
   previous wording; this repository update does not revise the manuscript.
 - Add a tested end-to-end entry point for every final manuscript figure and SI
   table after those data are frozen.
 - Create an immutable Git tag/commit and, if used, an archival DOI.
 
+
+## Updated Figure5c and Figure2b
+
+`python code/plot_fig5c_nonI1.py` uses the matched non-I1 SFE data (109 and labelled108-pair scopes). `python code/plot_fig2b_coverage.py` uses explicit retained source rows, with separate original-source and current-reference populations. See analysis/fig2b/README.md. These are tested local plotting entry points; pending global Figure3 and full manuscript/SI reproduction are not implied.
