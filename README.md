@@ -2,11 +2,7 @@
 
 Data and code supporting **Evaluating Universal Interatomic Potentials for Metallic Systems: From Elastic Response to Defect Energetics and Ideal Strength**.
 
-**Authors:** Jiawen Yu, Chaohong Guan, Xiaoqing Liu, Yangshuai Wang, Hong Zhu and Xiaoqin Zeng.
-
 This benchmark evaluates six universal interatomic potentials for metallic structures, elastic response, defects, ideal tensile deformation and computational efficiency. The repository provides extracted numerical/structural data rather than full VASP output directories.
-
-**Status:** release preparation in progress. The 2026-11-25 DFT SFE v4 update is available in `data/sfe_v4` (129 directory-paired records, 125 without Po). Matching final I1 model predictions and flagged DFT references remain unresolved; see its README and audits. This snapshot is not a complete reproduction of every manuscript result. No article acceptance, DOI or finalized release is asserted.
 
 ## Repository structure
 
@@ -166,5 +162,3 @@ The configured remote is [jiaweny097-web/MLIP-Benchmark](https://github.com/jiaw
 ## Noncommercial licensing
 
 Original software is available for noncommercial research/education under [LICENSE-CODE.txt](LICENSE-CODE.txt). Original data/documentation are [CC BY-NC4.0](LICENSE-DATA.md). Commercial use requires separate permission. This is a noncommercial source-available release, not OSI-approved open source. Third-party data and weights retain their own terms.
-
-Scientific contacts: Chaohong Guan (guanchaohong@sjtu.edu.cn), Hong Zhu (hong.zhu@sjtu.edu.cn), Xiaoqin Zeng (xqzeng@sjtu.edu.cn).
